@@ -1,0 +1,13 @@
+node_modules
+dist
+.accio
+.env
+.env.local
+.env.*.local
+.DS_Store
+.accio-site.json
+*.log
+preview-server.cjs
+*.log.err
+node-compile-cache
+g1.txt
