@@ -39,33 +39,15 @@ export default function Home() {
             </div>
 
             <div className="hero__stage">
-              <figure className="stage__shot stage__shot--tall">
+              <div className="hero__shot">
                 <img
-                  src="/products/hannya-mask-full-face-japanese.jpg"
-                  alt="Full-face Japanese hannya mask in red and bone-white lacquer"
-                  width="900"
-                  height="900"
+                  src="/hero/masquerade-ball.jpg"
+                  alt="A masked guest in an ornate gold filigree mask and feather headpiece at a candlelit Venetian masquerade ball, with further masked guests blurred behind"
+                  width="1024"
+                  height="1536"
                   decoding="async"
                 />
-              </figure>
-              <figure className="stage__shot">
-                <img
-                  src="/products/medieval-knight-armor-costume-chainmail.jpg"
-                  alt="Medieval knight chainmail and armour costume"
-                  width="900"
-                  height="900"
-                  decoding="async"
-                />
-              </figure>
-              <figure className="stage__shot">
-                <img
-                  src="/products/korean-hanbok-traditional-dangui-pleated.jpg"
-                  alt="Pleated traditional Korean hanbok in vivid colour"
-                  width="900"
-                  height="900"
-                  decoding="async"
-                />
-              </figure>
+              </div>
               <div className="stage__card">
                 <strong>Your design, our floor</strong>
                 <span>

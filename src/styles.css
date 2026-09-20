@@ -287,32 +287,31 @@ p { margin: 0 0 1em; }
 .hero .lede { margin-top: 20px; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 
-/* Lit product composition — built from our own catalogue photography. */
-.hero__stage {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1.12fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 14px;
-  aspect-ratio: 10 / 11;
-}
+/* Lit stage — a single cinematic scene, cropped in CSS so the mask stays in frame. */
+.hero__stage { position: relative; }
 
-.stage__shot {
+.hero__shot {
   position: relative;
-  margin: 0;
   overflow: hidden;
   border-radius: var(--radius);
   background: var(--bg-raised-2);
+  aspect-ratio: 4 / 5;
 }
-.stage__shot::after {
+.hero__shot::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 112%, rgba(224, 169, 63, 0.18), transparent 70%);
+  background: radial-gradient(ellipse at 50% 112%, rgba(224, 169, 63, 0.1), transparent 70%);
   pointer-events: none;
 }
-.stage__shot img { width: 100%; height: 100%; object-fit: cover; }
-.stage__shot--tall { grid-row: 1 / span 2; }
+.hero__shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Lifted so the mask clears the overlay card at every desktop width —
+     the card is a fixed height, so its share of the frame grows as the column narrows. */
+  object-position: center 40%;
+}
 
 .stage__card {
   position: absolute;
@@ -605,10 +604,15 @@ p { margin: 0 0 1em; }
 
 @media (max-width: 980px) {
   .hero__grid { grid-template-columns: 1fr; }
-  .hero__stage { aspect-ratio: 10 / 9; max-height: 460px; }
-  .stage__card { left: 14px; right: 14px; bottom: 14px; padding: 13px 15px; }
-  .stage__card strong { font-size: 0.98rem; }
-  .stage__card span { font-size: 0.78rem; }
+  /* Below the image rather than over it — an overlay this tall would hide the figure. */
+  .stage__card {
+    position: static;
+    margin-top: 12px;
+    box-shadow: none;
+    padding: 15px 16px;
+  }
+  .stage__card strong { font-size: 1rem; }
+  .stage__card span { font-size: 0.8rem; }
 }
 
 @media (max-width: 900px) {
