@@ -274,10 +274,66 @@ p { margin: 0 0 1em; }
   background: radial-gradient(ellipse at 50% 0%, var(--accent-wash), transparent 65%);
   pointer-events: none;
 }
-.hero__inner { position: relative; padding-block: clamp(72px, 12vw, 140px); }
+.hero__inner { position: relative; padding-block: clamp(56px, 9vw, 116px); }
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+}
+
 .hero h1 { max-width: 20ch; }
 .hero .lede { margin-top: 20px; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+
+/* Lit product composition — built from our own catalogue photography. */
+.hero__stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.12fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 14px;
+  aspect-ratio: 10 / 11;
+}
+
+.stage__shot {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--bg-raised-2);
+}
+.stage__shot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 112%, rgba(224, 169, 63, 0.18), transparent 70%);
+  pointer-events: none;
+}
+.stage__shot img { width: 100%; height: 100%; object-fit: cover; }
+.stage__shot--tall { grid-row: 1 / span 2; }
+
+.stage__card {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  padding: 16px 18px;
+  background: rgba(18, 20, 26, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+.stage__card strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.stage__card span { display: block; font-size: 0.82rem; line-height: 1.5; color: var(--ink-muted); }
 
 .stats { display: flex; flex-wrap: wrap; gap: clamp(24px, 5vw, 56px); margin-top: 56px; }
 .stats div strong {
@@ -547,12 +603,20 @@ p { margin: 0 0 1em; }
 .mt-2 { margin-top: 24px; }
 .mt-3 { margin-top: 40px; }
 
+@media (max-width: 980px) {
+  .hero__grid { grid-template-columns: 1fr; }
+  .hero__stage { aspect-ratio: 10 / 9; max-height: 460px; }
+  .stage__card { left: 14px; right: 14px; bottom: 14px; padding: 13px 15px; }
+  .stage__card strong { font-size: 0.98rem; }
+  .stage__card span { font-size: 0.78rem; }
+}
+
 @media (max-width: 900px) {
   .nav, .header__cta { display: none; }
   .burger { display: inline-flex; }
   .detail { grid-template-columns: 1fr; }
   .form__row { grid-template-columns: 1fr; }
-  .hero__inner { padding-block: clamp(48px, 14vw, 80px); }
+  .hero__inner { padding-block: clamp(40px, 12vw, 72px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
