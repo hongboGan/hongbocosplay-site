@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
 
 const SITE = 'Hongbo Cosplay';
-const ORIGIN = 'https://hongbocosplay.com';
+// Canonical host is www: the apex 308-redirects here on Vercel, so self-referencing
+// canonicals must point at www or every page declares a canonical that redirects away.
+const ORIGIN = 'https://www.hongbocosplay.com';
 
 function upsertMeta(attr, key, content) {
   let el = document.head.querySelector(`meta[${attr}="${key}"]`);

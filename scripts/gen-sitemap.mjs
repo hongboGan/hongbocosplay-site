@@ -3,7 +3,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const ORIGIN = 'https://hongbocosplay.com';
+// Must match the canonical host served by the site (www), not the apex that redirects to it.
+const ORIGIN = 'https://www.hongbocosplay.com';
 const DATA = path.resolve('src/data/products.json');
 const OUT = path.resolve('public/sitemap.xml');
 
