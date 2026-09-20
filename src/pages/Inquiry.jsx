@@ -72,12 +72,19 @@ export default function Inquiry() {
         }),
       });
       const data = await res.json().catch(() => null);
-      if (!res.ok) throw new Error((data && data.message) || `Submission failed (${res.status})`);
+      // FormSubmit answers HTTP 200 even when it rejects the submission, so the
+      // body's success flag — not the status code — decides what actually happened.
+      // Trusting res.ok here would show "thank you" for an inquiry that never sent.
+      if (!res.ok || !data || String(data.success) !== 'true') {
+        throw new Error((data && data.message) || `Submission failed (${res.status})`);
+      }
       setStatus('done');
     } catch (err) {
       setStatus('error');
       setNotice(
-        `We could not send that automatically (${String(err.message || err).slice(0, 120)}). Please email ${CONTACT.email} or message us on WhatsApp and we will pick it up straight away.`
+        `Your inquiry was not sent automatically. Please email ${CONTACT.email} or message us on WhatsApp ${CONTACT.whatsappDisplay} — we will pick it up straight away. (Technical detail: ${String(
+          err.message || err
+        ).slice(0, 140)})`
       );
     }
   }
