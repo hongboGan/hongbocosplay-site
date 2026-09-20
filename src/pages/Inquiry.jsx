@@ -81,11 +81,7 @@ export default function Inquiry() {
       setStatus('done');
     } catch (err) {
       setStatus('error');
-      setNotice(
-        `Your inquiry was not sent automatically. Please email ${CONTACT.email} or message us on WhatsApp ${CONTACT.whatsappDisplay} — we will pick it up straight away. (Technical detail: ${String(
-          err.message || err
-        ).slice(0, 140)})`
-      );
+      setNotice(String(err.message || err).slice(0, 140));
     }
   }
 
@@ -125,7 +121,14 @@ export default function Inquiry() {
 
         <div className="detail mt-3">
           <div className="panel">
-            {status === 'error' && <div className="notice notice--err">{notice}</div>}
+            {status === 'error' && (
+              <div className="notice notice--err">
+                Your inquiry was not sent automatically. Please email{' '}
+                <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a> or message us on WhatsApp{' '}
+                <a href={CONTACT.whatsappUrl}>{CONTACT.whatsappDisplay}</a> — we will pick it up straight away.
+                {notice && <span className="notice__detail">Technical detail: {notice}</span>}
+              </div>
+            )}
 
             <form onSubmit={onSubmit} noValidate>
               <div className="form__row">

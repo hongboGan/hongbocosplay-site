@@ -507,6 +507,15 @@ p { margin: 0 0 1em; }
 .notice--ok { background: rgba(95, 165, 122, 0.12); border: 1px solid rgba(95, 165, 122, 0.35); color: var(--ink); }
 .notice--err { background: rgba(196, 87, 79, 0.12); border: 1px solid rgba(196, 87, 79, 0.4); color: var(--ink); }
 
+/* When a submission fails the fallback has to be one tap, not something to copy out by hand. */
+.notice a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+.notice__detail { display: block; margin-top: 9px; font-size: 0.79rem; opacity: 0.72; }
+
 .contact-ways { display: grid; gap: 12px; margin-top: 20px; }
 .contact-way {
   display: flex;
