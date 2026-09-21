@@ -2,6 +2,7 @@
 // Run after any catalogue change: node scripts/gen-sitemap.mjs
 import fs from 'node:fs';
 import path from 'node:path';
+import { POSTS } from '../src/content/blog.js';
 
 // Must match the canonical host served by the site (www), not the apex that redirects to it.
 const ORIGIN = 'https://www.hongbocosplay.com';
@@ -20,6 +21,8 @@ const urls = [
   { loc: '/custom', priority: '0.8', freq: 'monthly' },
   { loc: '/about', priority: '0.6', freq: 'monthly' },
   { loc: '/inquiry', priority: '0.9', freq: 'monthly' },
+  { loc: '/blog', priority: '0.8', freq: 'weekly' },
+  ...POSTS.map((p) => ({ loc: `/blog/${p.slug}`, priority: '0.7', freq: 'monthly' })),
   ...products.map((p) => ({ loc: `/product/${p.id}`, priority: '0.7', freq: 'monthly' })),
 ];
 

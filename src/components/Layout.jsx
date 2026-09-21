@@ -75,6 +75,9 @@ export default function Layout() {
             <NavLink className="nav__link" to="/about">
               About
             </NavLink>
+            <NavLink className="nav__link" to="/blog">
+              Notes
+            </NavLink>
             <NavLink className="nav__link" to="/inquiry">
               Inquiry
             </NavLink>
@@ -137,6 +140,9 @@ export default function Layout() {
               <Link to="/about">About</Link>
             </li>
             <li>
+              <Link to="/blog">Sourcing notes</Link>
+            </li>
+            <li>
               <Link to="/inquiry">Inquiry</Link>
             </li>
           </ul>
@@ -184,6 +190,9 @@ export default function Layout() {
               </li>
               <li>
                 <Link to="/about">About us</Link>
+              </li>
+              <li>
+                <Link to="/blog">Sourcing notes</Link>
               </li>
               <li>
                 <Link to="/inquiry">Request a quote</Link>
