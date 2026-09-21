@@ -33,7 +33,7 @@ export default function Blog() {
           <div className="shell">
             <Link className="post-lead" to={`/blog/${lead.slug}`}>
               <div className="post-lead__media">
-                <img src={lead.cover} alt="" width="900" height="900" loading="lazy" decoding="async" />
+                <img src={lead.cover} alt="" width="900" height="900" decoding="async" />
               </div>
               <div className="post-lead__body">
                 <p className="post-meta">
