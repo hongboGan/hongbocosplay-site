@@ -5,12 +5,7 @@ import { usePageMeta } from '../lib/seo.js';
 import { MailIcon, WhatsAppIcon } from '../components/icons.jsx';
 
 export default function Blog() {
-  usePageMeta({
-    title: 'Sourcing notes',
-    description:
-      'Sourcing and production notes for cosplay buyers — masks, wigs, armour, sizing and order timing, written from the manufacturing side.',
-    path: '/blog',
-  });
+  usePageMeta();
 
   const [lead, ...rest] = sortedPosts;
 

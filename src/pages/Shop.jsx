@@ -6,12 +6,7 @@ import ProductCard from '../components/ProductCard.jsx';
 export default function Shop() {
   const [filter, setFilter] = useState('all');
 
-  usePageMeta({
-    title: 'Catalogue',
-    description:
-      'The full Hongbo Cosplay catalogue — masks and headwear, wigs, armour-style outerwear and costumes, all available for wholesale and OEM orders.',
-    path: '/shop',
-  });
+  usePageMeta();
 
   const shown = filter === 'all' ? products : products.filter((p) => p.category === filter);
 

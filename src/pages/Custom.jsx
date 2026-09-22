@@ -31,12 +31,7 @@ const STEPS = [
 ];
 
 export default function Custom() {
-  usePageMeta({
-    title: 'Custom / OEM manufacturing',
-    description:
-      'OEM cosplay merchandise: your artwork, your sizing, your branding. What we can customise, how sampling works, and the trade terms we work to.',
-    path: '/custom',
-  });
+  usePageMeta();
 
   return (
     <>

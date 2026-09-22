@@ -8,11 +8,7 @@ export default function CategoryPage() {
   const { category } = useParams();
   const cat = getCategory(category);
 
-  usePageMeta({
-    title: cat ? cat.name : 'Not found',
-    description: cat ? `${cat.blurb} Wholesale and OEM orders welcome.` : '',
-    path: `/shop/${category}`,
-  });
+  usePageMeta();
 
   if (!cat) return <NotFound />;
 

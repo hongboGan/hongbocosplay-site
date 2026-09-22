@@ -11,12 +11,7 @@ export default function Inquiry() {
   const wanted = params.get('product');
   const preselected = wanted ? getProduct(wanted) : null;
 
-  usePageMeta({
-    title: 'Request a quote',
-    description:
-      'Send us the item and the quantity. Quotes come back within one working day by email or WhatsApp.',
-    path: '/inquiry',
-  });
+  usePageMeta();
 
   const [values, setValues] = useState({
     Name: '',

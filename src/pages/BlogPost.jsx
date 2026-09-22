@@ -10,11 +10,7 @@ export default function BlogPost() {
   const { slug } = useParams();
   const post = getPost(slug);
 
-  usePageMeta({
-    title: post ? post.title : 'Article not found',
-    description: post ? post.excerpt : undefined,
-    path: post ? `/blog/${post.slug}` : '/blog',
-  });
+  usePageMeta();
 
   if (!post) return <NotFound />;
 

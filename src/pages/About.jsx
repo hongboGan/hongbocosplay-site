@@ -3,12 +3,7 @@ import { CATEGORIES, CONTACT, countIn } from '../data/products.js';
 import { usePageMeta } from '../lib/seo.js';
 
 export default function About() {
-  usePageMeta({
-    title: 'About us',
-    description:
-      'A cosplay merchandise and costume manufacturer supplying wholesale and OEM buyers — masks, headwear, wigs, armour-style outerwear and finished costumes.',
-    path: '/about',
-  });
+  usePageMeta();
 
   return (
     <>

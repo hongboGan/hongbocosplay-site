@@ -34,7 +34,13 @@ http
       return;
     }
     if (url.endsWith('/')) file = path.join(file, 'index.html');
-    if (!fs.existsSync(file) || fs.statSync(file).isDirectory()) file = path.join(ROOT, 'index.html');
+    // Mirror Vercel's resolution: /blog is served from blog.html before any SPA
+    // rewrite applies, so local checks see the prerendered page rather than the shell.
+    if (!fs.existsSync(file) || fs.statSync(file).isDirectory()) {
+      const asHtml = `${file}.html`;
+      file =
+        fs.existsSync(asHtml) && fs.statSync(asHtml).isFile() ? asHtml : path.join(ROOT, 'index.html');
+    }
 
     const body = fs.readFileSync(file);
     res.writeHead(200, {

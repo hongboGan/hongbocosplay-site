@@ -1,9 +1,6 @@
 import { useEffect } from 'react';
-
-const SITE = 'Hongbo Cosplay';
-// Canonical host is www: the apex 308-redirects here on Vercel, so self-referencing
-// canonicals must point at www or every page declares a canonical that redirects away.
-const ORIGIN = 'https://www.hongbocosplay.com';
+import { useLocation } from 'react-router-dom';
+import { headFor, metaForPath } from './route-meta.js';
 
 function upsertMeta(attr, key, content) {
   let el = document.head.querySelector(`meta[${attr}="${key}"]`);
@@ -25,18 +22,25 @@ function upsertLink(rel, href) {
   el.setAttribute('href', href);
 }
 
-// Per-route <title>, description, canonical and social tags.
-export function usePageMeta({ title, description, path = '/', image }) {
+// Keeps the document head in step with the route.
+//
+// Called with no argument it derives the values from the current path, which is what
+// almost every page wants. The prerender script renders the same values into static
+// HTML, so a crawler that never runs JS still gets a correct title and description.
+export function usePageMeta(meta) {
+  const { pathname } = useLocation();
+  const resolved = meta || metaForPath(pathname);
+  const { title, description, canonical, ogTitle, ogDescription, ogUrl, ogImage } = headFor(resolved);
+
   useEffect(() => {
-    const full = title ? `${title} | ${SITE}` : SITE;
-    document.title = full;
-    upsertMeta('name', 'description', description || '');
-    upsertMeta('property', 'og:title', full);
-    upsertMeta('property', 'og:description', description || '');
+    document.title = title;
+    upsertMeta('name', 'description', description);
+    upsertMeta('property', 'og:title', ogTitle);
+    upsertMeta('property', 'og:description', ogDescription);
     upsertMeta('property', 'og:type', 'website');
-    upsertMeta('property', 'og:url', `${ORIGIN}${path}`);
-    if (image) upsertMeta('property', 'og:image', `${ORIGIN}${image}`);
+    upsertMeta('property', 'og:url', ogUrl);
+    if (ogImage) upsertMeta('property', 'og:image', ogImage);
     upsertMeta('name', 'twitter:card', 'summary_large_image');
-    upsertLink('canonical', `${ORIGIN}${path}`);
-  }, [title, description, path, image]);
+    upsertLink('canonical', canonical);
+  }, [title, description, canonical, ogTitle, ogDescription, ogUrl, ogImage]);
 }

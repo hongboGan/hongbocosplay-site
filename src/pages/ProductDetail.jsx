@@ -9,14 +9,7 @@ export default function ProductDetail() {
   const { id } = useParams();
   const product = getProduct(id);
 
-  usePageMeta({
-    title: product ? shortTitle(product, 70) : 'Not found',
-    description: product
-      ? `${product.title} — ${priceLabel(product)}, ${moqLabel(product)}. Wholesale and OEM orders.`
-      : '',
-    path: `/product/${id}`,
-    image: product ? product.image : undefined,
-  });
+  usePageMeta();
 
   if (!product) return <NotFound />;
 

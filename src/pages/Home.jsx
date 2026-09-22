@@ -9,12 +9,7 @@ const FEATURED = ['masks', 'wigs', 'armor', 'costumes']
   .slice(0, 8);
 
 export default function Home() {
-  usePageMeta({
-    title: 'Custom Cosplay Merchandise Manufacturer',
-    description:
-      'Wholesale and OEM cosplay merchandise — masks, headwear, wigs, armour-style outerwear and costumes, manufactured to your specification.',
-    path: '/',
-  });
+  usePageMeta();
 
   return (
     <>

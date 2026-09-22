@@ -3,11 +3,7 @@ import { CATEGORIES } from '../data/products.js';
 import { usePageMeta } from '../lib/seo.js';
 
 export default function NotFound() {
-  usePageMeta({
-    title: 'Page not found',
-    description: 'The page you requested does not exist.',
-    path: '/404',
-  });
+  usePageMeta();
 
   return (
     <section className="section">
