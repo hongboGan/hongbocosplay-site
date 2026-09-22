@@ -12,7 +12,7 @@ database and no server: the site is static files plus one third-party form endpo
 ```bash
 npm install
 npm run dev      # local dev server on 127.0.0.1
-npm run build    # production build into dist/
+npm run build    # client build + SSR bundle + prerender every route into dist/
 npm run preview  # preview the built output
 
 node scripts/gen-sitemap.mjs    # regenerate public/sitemap.xml — run after any catalogue or article change
@@ -28,6 +28,25 @@ node scripts/serve-dist.mjs     # tiny static server with SPA fallback, for chec
 
 `/` · `/shop` · `/shop/:category` · `/product/:id` · `/custom` · `/about` · `/blog` ·
 `/blog/:slug` · `/inquiry` · 404 fallback
+
+## Prerendering
+
+`npm run build` runs three steps: the client build, an SSR bundle of `src/entry-server.jsx`,
+then `scripts/prerender.mjs`, which renders all 41 public routes with `react-dom/server` and
+writes real HTML — including that route's title, description, canonical and og tags — so a
+crawler that never runs JavaScript still receives a complete page. No SSR framework and no
+new runtime dependency.
+
+Three things to preserve when touching this:
+
+- **`vercel.json` must keep `cleanUrls: true`.** Vercel does not map `/blog` to `blog.html` on
+  its own; without it every extensionless route falls through and the prerendered files are
+  unreachable.
+- **Do not add a catch-all rewrite.** Unmatched paths are answered by the prerendered
+  `404.html`, which returns a real 404 status and deliberately carries no canonical.
+- **`src/lib/route-meta.js` is the only place page metadata lives.** The static HTML and the
+  hydrated app both read it, which is what keeps them from disagreeing and triggering a
+  hydration mismatch. A new route belongs there and in `ROUTES` in `entry-server.jsx`.
 
 ## Adding a blog post
 
