@@ -21,17 +21,21 @@ const escapeHtml = (value) =>
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 
-function headBlock(head) {
+function headLines(head) {
   const lines = [
     `<title>${escapeHtml(head.title)}</title>`,
     `<meta name="description" content="${escapeHtml(head.description)}" />`,
-    `<link rel="canonical" href="${escapeHtml(head.canonical)}" />`,
-    `<meta property="og:title" content="${escapeHtml(head.ogTitle)}" />`,
-    `<meta property="og:description" content="${escapeHtml(head.ogDescription)}" />`,
-    `<meta property="og:url" content="${escapeHtml(head.ogUrl)}" />`,
   ];
+  if (head.canonical) lines.push(`<link rel="canonical" href="${escapeHtml(head.canonical)}" />`);
+  lines.push(`<meta property="og:title" content="${escapeHtml(head.ogTitle)}" />`);
+  lines.push(`<meta property="og:description" content="${escapeHtml(head.ogDescription)}" />`);
+  if (head.ogUrl) lines.push(`<meta property="og:url" content="${escapeHtml(head.ogUrl)}" />`);
   if (head.ogImage) lines.push(`<meta property="og:image" content="${escapeHtml(head.ogImage)}" />`);
-  return `<!--head:start-->\n    ${lines.join('\n    ')}\n    <!--head:end-->`;
+  return lines;
+}
+
+function headBlock(head) {
+  return `<!--head:start-->\n    ${headLines(head).join('\n    ')}\n    <!--head:end-->`;
 }
 
 // `detail/x` -> dist/detail/x.html. Flat files, because Vercel resolves /detail/x to
@@ -53,10 +57,11 @@ if (!HEAD_BLOCK.test(template) || !template.includes(ROOT_PLACEHOLDER)) {
   process.exit(1);
 }
 
-// Keep an untouched shell for paths that are not prerendered. The SPA rewrite points at
-// it, because dist/index.html is now the rendered home page — serving that as a fallback
-// would hand an unknown URL the home page's title and canonical.
-fs.writeFileSync(path.join(DIST, 'spa.html'), template);
+// Blank shell for paths that are not prerendered. It carries the not-found head and
+// deliberately no canonical, so an unknown URL cannot claim the home page as canonical.
+// The SPA rewrite points here, not at dist/index.html, which is now the rendered home page.
+const shellHead = headLines(headFor({ ...metaForPath('/__unknown-route__'), path: null }));
+fs.writeFileSync(path.join(DIST, 'spa.html'), template.replace(HEAD_BLOCK, shellHead.join('\n    ')));
 
 const failures = [];
 let written = 0;

@@ -38,9 +38,15 @@ export function usePageMeta(meta) {
     upsertMeta('property', 'og:title', ogTitle);
     upsertMeta('property', 'og:description', ogDescription);
     upsertMeta('property', 'og:type', 'website');
-    upsertMeta('property', 'og:url', ogUrl);
-    if (ogImage) upsertMeta('property', 'og:image', ogImage);
     upsertMeta('name', 'twitter:card', 'summary_large_image');
-    upsertLink('canonical', canonical);
+    if (canonical) {
+      upsertMeta('property', 'og:url', canonical);
+      upsertLink('canonical', canonical);
+    } else {
+      // Unknown route: drop the canonical rather than point it at the home page.
+      document.head.querySelector('link[rel="canonical"]')?.remove();
+      document.head.querySelector('meta[property="og:url"]')?.remove();
+    }
+    if (ogImage) upsertMeta('property', 'og:image', ogImage);
   }, [title, description, canonical, ogTitle, ogDescription, ogUrl, ogImage]);
 }

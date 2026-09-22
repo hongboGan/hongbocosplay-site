@@ -85,9 +85,11 @@ export function metaForPath(pathname) {
 }
 
 // Concrete head values for a meta descriptor — shared by the client and the prerender.
+// A null `path` means "no canonical": an unknown URL must not claim the home page as
+// its canonical address.
 export function headFor(meta) {
   const title = meta.title ? `${meta.title} | ${SITE}` : SITE;
-  const canonical = `${ORIGIN}${meta.path || '/'}`;
+  const canonical = meta.path == null ? null : `${ORIGIN}${meta.path}`;
   const description = meta.description || '';
   return {
     title,
