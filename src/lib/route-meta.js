@@ -41,10 +41,11 @@ const STATIC = {
   },
 };
 
+// No canonical: a page that does not exist must never claim an address as canonical.
 const NOT_FOUND = {
   title: 'Page not found',
   description: 'The page you requested does not exist.',
-  path: '/404',
+  path: null,
 };
 
 export function metaForPath(pathname) {

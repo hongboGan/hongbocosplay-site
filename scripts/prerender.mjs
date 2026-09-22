@@ -34,8 +34,10 @@ function headLines(head) {
   return lines;
 }
 
+// The markers exist only in the template, so the replacement can find the block.
+// They are not carried into the output.
 function headBlock(head) {
-  return `<!--head:start-->\n    ${headLines(head).join('\n    ')}\n    <!--head:end-->`;
+  return headLines(head).join('\n    ');
 }
 
 // `detail/x` -> dist/detail/x.html. Flat files, because Vercel resolves /detail/x to
@@ -57,14 +59,19 @@ if (!HEAD_BLOCK.test(template) || !template.includes(ROOT_PLACEHOLDER)) {
   process.exit(1);
 }
 
-// Blank shell for paths that are not prerendered. It carries the not-found head and
-// deliberately no canonical, so an unknown URL cannot claim the home page as canonical.
-// The SPA rewrite points here, not at dist/index.html, which is now the rendered home page.
-const shellHead = headLines(headFor({ ...metaForPath('/__unknown-route__'), path: null }));
-fs.writeFileSync(path.join(DIST, 'spa.html'), template.replace(HEAD_BLOCK, shellHead.join('\n    ')));
-
 const failures = [];
 let written = 0;
+
+// Unmatched paths are answered by 404.html, which Vercel serves with a real 404 status.
+// That beats a 200 shell carrying the wrong canonical, and the SPA still hydrates the
+// styled not-found page on top of it.
+function writeNotFound() {
+  const appHtml = render('/__not-found__');
+  const head = headFor(metaForPath('/__not-found__'));
+  let html = template.replace(ROOT_PLACEHOLDER, `<div id="root">${appHtml}</div>`);
+  html = html.replace(HEAD_BLOCK, headBlock(head));
+  fs.writeFileSync(path.join(DIST, '404.html'), html);
+}
 
 for (const route of ROUTES) {
   try {
@@ -79,9 +86,16 @@ for (const route of ROUTES) {
     fs.writeFileSync(file, html);
     written += 1;
   } catch (err) {
-    // One bad route must never break the deploy; the SPA rewrite still covers it.
+    // One bad route must never break the deploy.
     failures.push(`${route}: ${err.message}`);
   }
+}
+
+try {
+  writeNotFound();
+  console.log('prerender: wrote 404.html');
+} catch (err) {
+  failures.push(`/404: ${err.message}`);
 }
 
 console.log(`prerender: wrote ${written}/${ROUTES.length} routes`);
