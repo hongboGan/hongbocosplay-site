@@ -295,6 +295,79 @@ The recurring complaint is not the delay itself but the silence around it. Ask f
 
 For a retailer, the whole calculation reduces to one line: **the cost of ordering late is not a longer wait, it is missing the season.**`
   },
+  {
+    slug: 'cosplay-fabric-specification',
+    title: 'Shiny, thin or off-white: specifying cosplay fabric so the second order matches',
+    excerpt:
+      '"How do I make this cheap polyester look better" is one of the most repeated questions in cosplay communities. The answer is almost never a better supplier — it is a fabric specification with more than one word in it.',
+    date: '2026-09-23',
+    tags: ['Fabric', 'Quality', 'Custom / OEM'],
+    cover: '/products/lolita-maid-dress-cosplay-costume.jpg',
+    sources: [
+      'r/CosplayHelp — "How can I make cheap polyester look better?"',
+      'r/CosplayHelp — "fixing see thru spandex"',
+      'r/sewhelp — "Fabrics for Cosplay Costumes"',
+    ],
+    body: `Every few weeks the same complaint surfaces in cosplay communities, worded differently each time. A costume arrives and the fabric is wrong in a way that is hard to argue about: too shiny, thin enough to show everything underneath, or a colour that is close to the photograph but not close enough to the one that was approved. Someone asks how to make cheap polyester look better, and the thread turns into a fabric-sourcing discussion.
+
+The cause is rarely the price. It is that the fabric was specified in one word.
+
+"Spandex" is not a specification. Neither is "polyester", "matte" or "four-way stretch". Each of those describes a family, and two fabrics from the same family can differ in appearance, weight and behaviour enough that they are not interchangeable products.
+
+## Shine is not one property
+
+Reflectance comes from at least four things, and they move independently:
+
+- **Fibre type.** Nylon and polyester take dye and light differently. Switching fibre to save cost changes sheen even when the colour code is unchanged.
+- **Yarn.** Filament yarn is smooth and takes a high shine. Spun yarn has more surface texture and reads matte.
+- **Knit construction.** A tight tricot has a flatter surface than a circular knit — same fibre, two constructions, two different finishes.
+- **Finishing.** Calendering and coating change surface reflectivity, and a matting step added on top of a shiny yarn is easy to drop without anyone telling you.
+
+None of it is visible in a product photograph, and all of it survives into the finished garment. "Shiny" is not something you can request as an adjective; it is an outcome of the fibre, yarn, construction and finish you specified.
+
+The same logic applies to wigs, where density and cap construction decide how a piece reads far more than the fibre does — see our note on [specifying wigs](/blog/cosplay-wig-quality-specification).
+
+## The six numbers that define a stretch fabric
+
+- **Composition** by percentage, not by name.
+- **Weight in gsm** — grams per square metre. The most predictive number for opacity and drape, and the one most often missing from a quotation.
+- **Stretch direction** — two-way or four-way, and which direction the stretch runs.
+- **Stretch and recovery** — how far it extends, and how well it returns.
+- **Surface finish** — matte, satin or high gloss, in those words.
+- **Colour reference and dye lot** — against a physical standard, not a web image.
+
+A supplier who can quote against all six is quoting a product. One who answers with a composition and a price is quoting a category.
+
+> A photograph is a rendering of a colour, not a standard for one. Screens, white balance and studio lighting all move a colour, so approve against a physical swatch or you are approving an interpretation.
+
+## Why white and pale shades are the hard ones
+
+The fabric that is perfectly opaque in black can be translucent in white, because opacity depends on how much light passes through and how much colour hides it. Buyers order a lightweight white, then receive a garment that ghosts against skin.
+
+There are three answers — go up in weight, add a lining, or pick a different colour — and all three have to be decided at specification stage. Once the goods are cut, none of them are options.
+
+## Colour drift between batches
+
+Dye lots vary. The same colour code produced in a different lot will shift, usually slightly, occasionally enough to be obvious when two garments sit side by side. A repeat order placed months later is unlikely to run on the original dye lot.
+
+That is a fact of dyeing rather than a supplier failing, which is why the reliable protection is a sealed sample: approve a physical piece, keep it, and reference it on every later order. Two batches can then be compared against something that does not change.
+
+## The swatch protocol
+
+Three steps, and a week at most:
+
+- **Request a swatch card.** A physical piece, with composition, gsm, finish and stretch recorded alongside it.
+- **Approve and seal it.** Sign it, date it, and keep it somewhere it will not fade or go missing.
+- **Attach it to the purchase order.** The swatch — not the catalogue photo — becomes the definition of the order.
+
+If a supplier cannot produce a swatch card, that tells you something too. It usually means the fabric is bought on the spot market rather than held to a standard.
+
+## What skipping this costs
+
+For a retailer the failure is specific. A batch that is slightly too shiny or marginally translucent does not read to a customer as a manufacturing defect — it reads as a quality problem with your brand. The review says the fabric looks cheap, and the return rate moves. Neither shows up in the unit price you negotiated.
+
+The test is the same one that applies to [sizing](/blog/custom-sizing-and-grading): whether the second order matches the first. Get the fabric spec in writing before the deposit and keep the approved swatch, and the reorder becomes a repeat rather than a renegotiation. If you are specifying a garment now, [send us the reference](/inquiry) and we will quote against a physical swatch.`
+  },
 ];
 
 export const sortedPosts = [...POSTS].sort((a, b) => (a.date < b.date ? 1 : -1));
