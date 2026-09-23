@@ -11,8 +11,11 @@ function renderInline(text, keyPrefix) {
     .filter(Boolean)
     .map((part, i) => {
       const key = `${keyPrefix}-${i}`;
-      if (/^\*\*[^*]+\*\*$/.test(part)) return <strong key={key}>{part.slice(2, -2)}</strong>;
-      if (/^\*[^*]+\*$/.test(part)) return <em key={key}>{part.slice(1, -1)}</em>;
+      // Recurse so emphasis can wrap other inline syntax. Without this, a link written
+      // inside **bold** renders as the literal text "[label](/path)" instead of an anchor.
+      if (/^\*\*[^*]+\*\*$/.test(part))
+        return <strong key={key}>{renderInline(part.slice(2, -2), key)}</strong>;
+      if (/^\*[^*]+\*$/.test(part)) return <em key={key}>{renderInline(part.slice(1, -1), key)}</em>;
 
       const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
       if (link) {
