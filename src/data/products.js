@@ -24,6 +24,11 @@ export const CATEGORIES = [
     blurb: 'Chainmail, hooded cloaks and capes built for stage and event wear.',
   },
   {
+    slug: 'props',
+    name: 'Props & Weapons',
+    blurb: 'Cast blade and sword models, die-cast props and display ornaments.',
+  },
+  {
     slug: 'costumes',
     name: 'Costumes',
     blurb: 'Finished outfits across period, folk, occupational and anime themes.',

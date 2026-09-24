@@ -3,9 +3,9 @@ import { CATEGORIES, CONTACT, byCategory, countIn, products } from '../data/prod
 import { usePageMeta } from '../lib/seo.js';
 import ProductCard from '../components/ProductCard.jsx';
 
-const FEATURED = ['masks', 'wigs', 'armor', 'costumes']
+const FEATURED = ['masks', 'wigs', 'armor', 'props', 'costumes']
   .flatMap((slug) => byCategory(slug).slice(0, 2))
-  .concat(products.filter((p) => !['masks', 'wigs', 'armor', 'costumes'].includes(p.category)).slice(0, 2))
+  .concat(products.filter((p) => !['masks', 'wigs', 'armor', 'props', 'costumes'].includes(p.category)).slice(0, 2))
   .slice(0, 8);
 
 export default function Home() {
