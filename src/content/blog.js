@@ -368,6 +368,75 @@ For a retailer the failure is specific. A batch that is slightly too shiny or ma
 
 The test is the same one that applies to [sizing](/blog/custom-sizing-and-grading): whether the second order matches the first. Get the fabric spec in writing before the deposit and keep the approved swatch, and the reorder becomes a repeat rather than a renegotiation. If you are specifying a garment now, [send us the reference](/inquiry) and we will quote against a physical swatch.`
   },
+  {
+    slug: 'cosplay-minimum-order-quantity',
+    title: 'MOQ: why a minimum exists — and how to get a small first run made',
+    excerpt:
+      '"How do I get the first order small?" is one of the most repeated questions in procurement threads. A minimum is a mechanism rather than a policy — and once you know which mechanism, most of them are softer than the listing suggests.',
+    date: '2026-09-24',
+    tags: ['MOQ', 'Wholesale', 'Custom / OEM'],
+    cover: '/products/multi-color-pvc-masquerade-eye.jpg',
+    sources: [
+      'r/procurement — "Negotiation for lower minimum order quantity?"',
+      'r/Entrepreneur — "Dealing with minimum order quantities as an e-commerce business"',
+      'r/FulfillmentByAmazon — "Getting started with FBA - MOQ"',
+    ],
+    body: `In buyer communities the minimum order quantity gets treated as a wall. A supplier says three hundred, the buyer has four hundred dollars to spend, and the conversation ends there. In procurement threads the question is always the same — how do I get the first order small? Someone answers with a tactic, and the tactics work, but they work for a reason that rarely gets explained.
+
+That reason is worth knowing, because it tells you which minimums are soft and which are not.
+
+## A minimum is a mechanism, not a policy
+
+Almost every published minimum traces back to one of five things:
+
+- **The fabric.** Mills sell by the roll. A garment that needs a fabric the factory does not hold inherits the mill's minimum, multiplied by however many pieces fit in that roll.
+- **The dye lot.** A custom colour means a dyeing run, and a dyeing vat has a minimum. A stock colour does not — though pale custom shades carry a second risk, covered in our note on [specifying fabric](/blog/cosplay-fabric-specification).
+- **The mould or the tooling.** A cast mask, a thermoformed piece or a printed panel needs a mould, a buck or a screen. The tooling is real cost and it has to be recovered across the run, so a small run carries all of it.
+- **Imported trims.** Feathers, specific laces, printed ribbon and metal hardware are bought in packs. A minimum that looks arbitrary usually comes from a pack size somewhere upstream.
+- **Setup time.** Cutting, embroidery and printing each have a setup step that costs the same whether you make ten pieces or a thousand.
+
+None of that is a supplier being difficult. It is the floor below which the item stops being a product.
+
+## Why the spread across a catalogue is so wide
+
+Because the mechanism differs per item, published minimums are not comparable to each other. In practice the number tracks the production type:
+
+- **Stock colours, stock sizes, held in inventory** — single digits are realistic.
+- **Made to order from held fabric, with a complex assembly or imported trim** — tens.
+- **A custom colour, a new mould, or a printed design** — hundreds and upward.
+
+> Two masks that look almost identical can carry minimums an order of magnitude apart, because one is pulled from an existing mould in a stock colour and the other is not. Ask what the minimum is made of, not just what it is.
+
+This is also why a listing that promises any quantity on a fully custom item deserves a second question. Something in that quote is not custom.
+
+## Five ways a smaller first order actually happens
+
+- **Order across the range, not in depth.** If the fabric is shared, the minimum usually sits on the fabric rather than the size. Twenty pieces split across four sizes can satisfy a twenty-piece minimum in a way that twenty pieces of one size cannot.
+- **Take a stock colour.** This is the biggest single lever. A stock colour removes the dye minimum entirely, and often the fabric minimum with it.
+- **Ask to be added to a scheduled run.** If the item is already in production for another buyer, your quantity can sometimes ride along. It is the most under-used option and it costs the maker very little — which is also an argument for starting the conversation early, as our note on [order timing](/blog/cosplay-order-timing) sets out.
+- **Start from an existing mould or pattern** for the first order, and pay for the new tooling on the second.
+- **Buy the sample as a one-off first.** It is a legitimate way to test a maker before committing to a run. Decide what you are locking down while you do it — our note on [sizing and grading](/blog/custom-sizing-and-grading) covers the specification side.
+
+## When a low minimum is the worse deal
+
+A very low minimum on something fully custom is not automatically good news. Tooling and setup get paid for somewhere, and if they are not spread across a run, they land on the unit price of a very small order. On a new mould it is often cheaper per piece to order more, not less.
+
+The combination worth being suspicious of is fully custom, very low minimum, and a price close to a stock item. One of the three is usually not true, and a stock item with a new label on it explains the arithmetic most of the time.
+
+## What to send instead of "what is your MOQ"
+
+Asking for the minimum alone gets you a number and ends the conversation. These five questions get an answer you can act on:
+
+- Which items can be produced at the quantity I need?
+- What does the unit price look like at my quantity, and at twice and four times that?
+- Is this item held in stock, or made to order?
+- If it is made to order, is the minimum coming from the fabric, the colour, the mould, or a trim?
+- What does the sample cost, and is it credited against the bulk order?
+
+That last one is worth asking every time. A supplier who credits the sample against the order is telling you they expect the order to happen.
+
+Most minimums are softer than the listing suggests, but only for the buyer who asks why they exist. Send us the item and the quantity you have in mind, and we will tell you which lines can meet it — [send us your target quantity](/inquiry).`
+  },
 ];
 
 export const sortedPosts = [...POSTS].sort((a, b) => (a.date < b.date ? 1 : -1));
