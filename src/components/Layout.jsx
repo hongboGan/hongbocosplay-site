@@ -15,11 +15,49 @@ export default function Layout() {
   const [shopOpen, setShopOpen] = useState(false);
   const [drawer, setDrawer] = useState(false);
   const shopRef = useRef(null);
+  const waRef = useRef(null);
   const { pathname } = useLocation();
 
   useEffect(() => {
     setShopOpen(false);
     setDrawer(false);
+  }, [pathname]);
+
+  // The CTA is fixed to the bottom corner. On a narrow screen the product title sits low,
+  // because the hero image comes first, so the CTA can land on top of it and the page reads
+  // as broken. Shrink it away only while it actually overlaps the heading — on the pages
+  // where there is no collision this changes nothing.
+  useEffect(() => {
+    const wa = waRef.current;
+    if (!wa) return undefined;
+    let frame = 0;
+
+    const update = () => {
+      frame = 0;
+      const heading = document.querySelector('main h1');
+      if (!heading) {
+        wa.classList.remove('wa--hidden');
+        return;
+      }
+      const a = wa.getBoundingClientRect();
+      const b = heading.getBoundingClientRect();
+      const overlaps =
+        b.bottom > a.top && b.top < a.bottom && b.right > a.left && b.left < a.right;
+      wa.classList.toggle('wa--hidden', overlaps);
+    };
+
+    const schedule = () => {
+      if (!frame) frame = window.requestAnimationFrame(update);
+    };
+
+    update();
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    return () => {
+      window.removeEventListener('scroll', schedule);
+      window.removeEventListener('resize', schedule);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
   }, [pathname]);
 
   useEffect(() => {
@@ -217,7 +255,12 @@ export default function Layout() {
         </div>
       </footer>
 
-      <a className="wa" href={CONTACT.whatsappUrl} aria-label={`WhatsApp ${CONTACT.whatsappDisplay}`}>
+      <a
+        ref={waRef}
+        className="wa"
+        href={CONTACT.whatsappUrl}
+        aria-label={`WhatsApp ${CONTACT.whatsappDisplay}`}
+      >
         <WhatsAppIcon />
         <span>WhatsApp</span>
       </a>
