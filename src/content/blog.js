@@ -437,6 +437,81 @@ That last one is worth asking every time. A supplier who credits the sample agai
 
 Most minimums are softer than the listing suggests, but only for the buyer who asks why they exist. Send us the item and the quantity you have in mind, and we will tell you which lines can meet it — [send us your target quantity](/inquiry).`
   },
+  {
+    slug: 'cosplay-prop-freight-and-landed-cost',
+    title: 'Landed cost: why the freight can cost more than the props — and how to order around it',
+    excerpt:
+      'Freight quotes that exceed the value of the goods are not a mistake, they are what low-value props look like when you price them on unit cost alone. The fix is four numbers most buyers never ask for.',
+    date: '2026-09-28',
+    tags: ['Freight', 'Wholesale', 'Sourcing'],
+    cover: '/products/mini-sword-display-rack-7cm.jpg',
+    sources: [
+      'r/smallbusiness — "Hit a Wall with China->US Shipping Costs ($17.50 for $29 …)"',
+      'r/FulfillmentByAmazon — "Those of you utilizing sea shipping, how do your …"',
+      'r/freightforwarding — "Advice for importing personal items from China"',
+    ],
+    body: `The same story shows up in import forums in slightly different forms. Someone has a supplier quote they are happy with, then gets a freight quote that is a large fraction of the goods value — seventeen dollars of shipping against a twenty-nine dollar order, or fourteen hundred dollars of freight against seven hundred dollars of product. The question underneath is always whether they are doing something wrong.
+
+Usually they are not. They are comparing the wrong number.
+
+## The unit price is the smallest number in the calculation
+
+A quoted unit price covers the goods at the supplier's door and nothing else. What actually arrives at your warehouse also includes:
+
+- **Freight**, billed by air, by sea or by express, on whichever is greater between the actual weight and the volumetric weight.
+- **Insurance**, usually a small percentage of the declared value.
+- **Duty and tax** at the destination, which follow the tariff code and the destination country rather than what you paid.
+- **Destination charges** — terminal handling, customs clearance, delivery to door. Many of these are flat fees, which is why they hurt small shipments disproportionately.
+
+On a high-value item the goods dominate the total and everything else is noise. On a cheap one the order inverts, and the fixed costs become the product.
+
+## Volumetric weight is why light goods still ship expensively
+
+Air carriers do not bill on weight alone. They also compute a volumetric weight from the carton's dimensions and bill on whichever figure is higher. A carton that is mostly air is billed as though it were heavier than it is.
+
+For props the consequence is direct. A 26cm sword model in a display box weighs very little and measures a lot. A stack of those cartons can cost far more to move than a single dense carton of fabric at the same total weight.
+
+There is no way around that arithmetic. There is a way to choose with it in view, and that requires data most buyers never ask for.
+
+## The number that changes the comparison: pieces per carton
+
+Before comparing two suppliers, ask each of them for four things beyond the unit price:
+
+- **Pieces per carton** — how many units fit one export carton.
+- **Carton dimensions and gross weight** — the outer carton, packed, not the item.
+- **Carton count** for the quantity you are considering.
+- **Total volume**, in cubic metres, for the whole order.
+
+With those four, two quotes become comparable at the level that decides the outcome. Without them, a cheaper unit price can be the more expensive order, because it may mean fewer pieces per carton and more air being shipped.
+
+> Two suppliers can quote the same item at the same unit price and differ by a wide margin once landed. The gap is in the carton, not in the price list.
+
+## Order size is a freight decision, not only a stocking decision
+
+The fixed part of freight — documentation, clearance, terminal handling, the forwarder's minimum — does not shrink with the shipment. Spread across a very small order, it can dominate the cost of the goods entirely.
+
+This cuts against the instinct to start as small as possible. A first order that is too small is often the most expensive way to buy, because the same fixed costs land on a fraction of the product.
+
+There are two ways out, and both are consolidation:
+
+- **Order more of the same item**, so the fixed costs are spread further. That is the same trade-off described in our note on [minimum order quantities](/blog/cosplay-minimum-order-quantity).
+- **Order several items together.** Mixed cartons share one freight bill, one clearance and one delivery — not three.
+
+## Consolidating cheap items is the whole game
+
+Low-value props — keychains, display stands, small cast models — rarely justify a shipment of their own. They justify a share of one.
+
+So the practical unit for a buyer is the mixed order: several SKUs, chosen so the cartons fill properly, moving on a single set of documents. It also means that the cheapest possible item and the cheapest possible order are different goals, and only the second one is worth optimising.
+
+The scheduling side is the same calculation seen from the other end; our note on [order timing](/blog/cosplay-order-timing) covers how far ahead that has to start.
+
+## What to do before comparing suppliers
+
+Ask for the carton data first, compare landed cost instead of unit price, and treat a very cheap item as a component of a shipment rather than a shipment in its own right.
+
+If you send us the items and quantities you have in mind, we can come back with the carton count and total volume — the part most quotes leave out. [Send us your requirements](/inquiry).
+`,
+  },
 ];
 
 export const sortedPosts = [...POSTS].sort((a, b) => (a.date < b.date ? 1 : -1));
