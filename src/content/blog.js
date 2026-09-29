@@ -512,6 +512,85 @@ Ask for the carton data first, compare landed cost instead of unit price, and tr
 If you send us the items and quantities you have in mind, we can come back with the carton count and total volume — the part most quotes leave out. [Send us your requirements](/inquiry).
 `,
   },
+  {
+    slug: 'retail-ready-packaging-and-private-label',
+    title: 'Polybags, hangtags and barcodes: specifying retail-ready packaging for props and costumes',
+    excerpt:
+      'The supplier asking how you want the goods packed is not making small talk. Packaging is five specifications deep, and most first orders only write the first one down.',
+    date: '2026-09-29',
+    tags: ['Packaging', 'Private Label', 'Wholesale'],
+    cover: '/products/mini-ancient-sword-keychain-12cm.jpg',
+    sources: [
+      'r/AlibabaQualityCheck — do you include barcode scanning in your pre-shipment checklist?',
+      'Amazon Seller Central forums — "First order from Alibaba. Supplier asking for pic of poly bag ..."',
+      'Alibaba.com seller blog — "Hanging Card Packaging for Retail Display"',
+    ],
+    body: `The product gets all the attention, and the packaging decides whether it can be sold. In seller forums the pattern is always the same: a first order is placed, the supplier asks how the goods should be packed, and the buyer discovers they do not have an answer.
+
+"How do you want it packed" is not small talk. It is the point where the specification becomes yours.
+
+## Five levels, and you are usually ordering two of them
+
+Packaging is not one decision. It is five, stacked:
+
+- **Unit packaging** — the polybag, blister or box the customer first touches.
+- **Protective packaging** — what keeps a rigid, pointed or bladed item straight and unmarked in transit.
+- **Retail presentation** — the hangtag, backing card or display box. This is the layer that makes an item shelf-ready rather than warehouse-ready.
+- **Identification and marking** — the barcode, and the origin and safety wording your channel requires. Retailers and marketplaces set their own rules for barcode placement, country of origin labelling and safety warnings, and those rules are not the supplier's to guess.
+- **Outer carton** — shipping marks and pieces per carton. This is the level that decides your freight bill, not your customer's impression.
+
+Most first orders specify the first level and stop. The problems arrive from the fourth.
+
+## The three ways a shipment lands unsellable
+
+- **The barcode will not scan.** The wrong symbology, a print too small to resolve, a label placed over a curve or a seam. Nothing is wrong with the goods, and the retailer cannot intake them.
+- **The wording is missing or wrong.** Whatever your market and channel require to be printed on the unit or the card, they require on every unit. It cannot be added later at a sensible cost.
+- **It has to be repacked on arrival.** Rebagging, relabelling and reboxing in a destination warehouse costs multiples of doing it at origin.
+
+All three are avoidable at the sample stage and expensive afterwards.
+
+## What private label changes, and what it does not
+
+Private label means your name on the unit and the carton. It does not necessarily mean a different product — the same goods can carry several brands, which is why a supplier can often offer it without tooling.
+
+What it does change:
+
+- **Tooling.** A printed box needs a die. A printed card needs plates. Both carry a cost and a minimum run, which is the trade-off described in our note on [minimum order quantities](/blog/cosplay-minimum-order-quantity).
+- **Artwork ownership.** Establish up front who holds the die and the print files. If the answer is the supplier, moving later means paying for it again.
+- **Serialisation.** Applying a barcode to every unit is a production step. Someone does it, and it is priced.
+
+What it does not change: the marking requirements. Your brand on the packaging does not remove the obligation to carry whatever the destination and channel require.
+
+## The packaging spec, on one page
+
+A supplier can build from a single page. These are the lines it needs:
+
+- **Unit pack:** type, material and thickness, finished dimensions, and the artwork file.
+- **Barcode:** the number, the symbology, where it goes, and whether it is printed or applied as a label.
+- **Marking text:** the exact wording, character height and placement.
+- **Presentation:** the card or tag size, stock, print, and the hole diameter and position.
+- **Carton:** pieces per carton, carton dimensions, gross weight, and shipping marks.
+- **Sample:** a packed sample, approved before the run.
+
+Anything left blank is a choice someone else makes for you.
+
+
+## Test it before the run
+
+Three checks, all cheaper than fixing them later:
+
+- **Get a packed sample.** Not a loose unit — you are approving the finished article as the customer receives it.
+- **Scan the barcode.** With a real scanner, at the smallest printed size you will accept. This is the cheapest test in the entire order and the one most often skipped.
+- **Do the carton math.** Pieces per carton, carton dimensions and total volume — the same four numbers that decide your [landed cost](/blog/cosplay-prop-freight-and-landed-cost).
+
+> Barcodes and wording are print, not tooling. Get them right on the sample and save the die for the order you are already confident about.
+
+## Where this stops being paperwork
+
+Retail-ready packaging is unglamorous and easy to skip, which is why so much of a catalogue arrives in a plain bag. The buyer who specifies it properly is the one whose goods go straight to a shelf instead of stopping in a warehouse first.
+
+Almost all of that cost is decided on a single page of specification, before anything is produced. If you are preparing one, we can quote against it and tell you what the tooling will take — [send us your packaging spec](/inquiry), or start from the [custom and OEM page](/custom) for what we can build to your brand.`
+  },
 ];
 
 export const sortedPosts = [...POSTS].sort((a, b) => (a.date < b.date ? 1 : -1));
