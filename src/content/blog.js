@@ -591,6 +591,101 @@ Retail-ready packaging is unglamorous and easy to skip, which is why so much of 
 
 Almost all of that cost is decided on a single page of specification, before anything is produced. If you are preparing one, we can quote against it and tell you what the tooling will take — [send us your packaging spec](/inquiry), or start from the [custom and OEM page](/custom) for what we can build to your brand.`
   },
+  {
+    slug: 'pre-shipment-inspection-and-defects',
+    title: 'Inspecting a cosplay order before it ships: sampling, measurements and what to do when it fails',
+    excerpt:
+      'Inspection is not distrust. It is the step that turns an argument about taste into a question of fact, and it only works if the terms were agreed before production started.',
+    date: '2026-09-30',
+    tags: ['Inspection', 'Quality control', 'Wholesale'],
+    cover: '/products/metal-claw-knife-prop-model.jpg',
+    sources: [
+      'r/Alibaba — Warning about Alibaba Trade Assurance: use pre-shipment inspection, and payment terms based on acceptance',
+      'r/Alibaba — Purchasing from China, following the correct transaction: small order video full inspection, large order third-party AQL sampling',
+      'r/Alibaba — Large bulk order: run a quality check based on AQL standards once production is complete',
+      'ELSmar Quality Forum — Sampling Plan Risks: defects escape even when sampling inspection is done properly',
+      'Published pre-shipment inspection guides — common AQL defaults of 0 critical, 2.5 major, 4.0 minor',
+    ],
+    body: `Every few weeks the same question surfaces in cosplay communities, worded differently each time. An order arrives and something is wrong with it. The supplier says the goods are fine, the buyer says they are not, and neither of them can point to a document that settles it.
+
+Inspection is not an accusation. It is the step that turns a disagreement about taste into a question of fact.
+
+## The point of it is to move the argument to origin
+
+A defect found at origin can still be reworked, remade, or priced into the order. The identical defect found at destination cannot. Shipping does not improve goods, it only decides who is holding them when the problem is discovered.
+
+One honest caveat, because it changes how you plan: sampling inspection means defects escape even when it is done properly. Inspection reduces risk, it does not remove it. A buyer who expects a clean report to guarantee a clean shipment will read a good inspection as a broken promise.
+
+## You cannot check every unit, so you check a sample
+
+Inspection is statistical by necessity. You inspect a sample, and the sample decides the lot. What matters is agreeing the terms before production starts, not arguing about them after the report arrives.
+
+- **Vocabulary.** Decide what counts as critical, major and minor on this specific product. A hairline seam is minor on a prop and major on a garment.
+- **Sampling.** How many units get opened, and how the sample is drawn.
+- **Threshold.** How many defects accept the lot, and how many reject it.
+
+AQL is the common vocabulary for those thresholds. Typical defaults are 0 for critical, 2.5 for major and 4.0 for minor defects. It is worth being precise about what the numbers are, because the common misreading is expensive: an AQL is a lookup value in a sampling table that returns an accept and a reject number for your lot size. It is not a statement that 2.5 percent of the shipment is allowed to be bad.
+
+Order size changes the method. For a small order, a video walkthrough of the whole lot covering packaging, labelling, quantity and appearance is usually enough. For a large order, third-party sampling is the standard answer.
+
+## Measurements are the check nobody argues about
+
+Two people can look at the same paint finish and disagree. Nobody argues with a tape measure. Flat measurements taken against the spec sheet are the most objective evidence available on a cosplay order, which is exactly why they are also the check most often skipped.
+
+Agree the tolerance per dimension in advance, because the acceptable error depends entirely on what the part is. Two centimetres is fatal on a mask that has to sit on a face and irrelevant on a cape. Photograph the tape on the garment for the measurements that matter, so the number and the evidence arrive together. The specification itself is covered in our note on [custom sizing and grading](/blog/custom-sizing-and-grading).
+
+## What actually goes wrong, by product family
+
+Generic checklists waste time. These are the failure modes that repeat:
+
+- **Masks and headpieces** — asymmetry between left and right, eye holes that do not line up, thin or missed paint at the edges, straps attached at the wrong height, and the smell of uncured resin or latex.
+- **Wigs** — fibre that does not match the approved standard, a cap that sits badly at the parting, shedding when combed, density lower than the sample, and a colour that reads correctly under shop light and wrong under neutral light.
+- **Armour and props** — thin walls that flex, warp so the part will not sit straight, burrs and sharp edges where a hand will land, primer that was skipped, and parts that were supposed to align and do not.
+- **Garments** — finished measurements off spec, stitch density below the sample, raw or unfinished seam allowances, trims substituted, and colour drift against the standard.
+
+The threads on [wig quality](/blog/cosplay-wig-quality-specification) and [armour and props](/blog/sourcing-cosplay-armour-and-props) go deeper on the first three families.
+
+## The report that settles it
+
+A useful report is dull and countable. A useless one is a paragraph of adjectives.
+
+- **Counts, not opinions.** Three of twenty units with paint runs beats the finish is not good.
+- **One photo per defect type**, with a scale reference in frame.
+- **Units inspected against units in the lot.** Twenty checked out of two thousand is a different claim from twenty out of twenty.
+- **The measurement table**, next to the spec sheet it was measured against.
+
+If the evidence is a video, check that the quantity is visible in it. A close-up of one perfect unit proves nothing about a lot of two thousand.
+
+## When it fails
+
+A failed inspection is not the end of the order. It is a decision point, and there are four options:
+
+- **Rework.** The supplier fixes the defects and the lot is inspected again. Best when the defect is cosmetic.
+- **Remake the failed units.** The rest ships. Best when the defect is concentrated rather than spread.
+- **Price adjustment.** The lot ships as is, at a reduced price, with the buyer accepting the defects in writing.
+- **Ship as is.** Only sensible when the defects genuinely do not matter to the end customer.
+
+The party whose specification was missed carries the cost. That sentence only works if the specification was written down — which is why the [packaging spec](/blog/retail-ready-packaging-and-private-label) and the measurements matter more than the inspection itself.
+
+The single most effective lever is not the inspection, it is the payment terms. If the balance is due against a shipping date, a failed inspection is an argument you have already lost. If the balance is due against the inspection report, the defect is still correctable, because the money is still in play. Buyers who have been through a bad shipment tend to say the same thing afterwards: hold the balance against acceptance, not against the calendar.
+
+## When to pay a third party
+
+An inspector costs a fee per day, quoted in the low hundreds of US dollars by the agencies that publish rates. That is small against a shipment that has to be reworked or written off, and it is usually worth it in three situations: the first order from a supplier you have not used, a lot large enough that a defect rate becomes a real number, and a complex item where the failure modes are not visible in a photo.
+
+What you hand them decides what you get back. Give the inspector your spec sheet and the sample you approved. Without those, the only thing they can report is an opinion, and an opinion is what you were trying to replace.
+
+## The one-page pre-shipment sheet
+
+- **Spec sheet** with tolerances per dimension.
+- **Approved sample**, kept by both sides and referenced by the report.
+- **Defect definitions** for critical, major and minor on this product.
+- **Sample size and threshold**, in the purchase order, not in an email.
+- **Report format** — counts, photos with scale, units inspected against lot size, measurements.
+- **Payment trigger** — balance against the report.
+
+Almost all of the cost of a failed shipment is decided before production starts, by whether those six lines exist. If you are preparing an inspection for an order you are placing, we can quote against your spec sheet and tell you what we can hold to — [send us your inspection spec](/inquiry), or see the [custom and OEM page](/custom) for what we build to your standard.`
+  },
 ];
 
 export const sortedPosts = [...POSTS].sort((a, b) => (a.date < b.date ? 1 : -1));
