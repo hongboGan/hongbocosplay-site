@@ -686,6 +686,83 @@ What you hand them decides what you get back. Give the inspector your spec sheet
 
 Almost all of the cost of a failed shipment is decided before production starts, by whether those six lines exist. If you are preparing an inspection for an order you are placing, we can quote against your spec sheet and tell you what we can hold to — [send us your inspection spec](/inquiry), or see the [custom and OEM page](/custom) for what we build to your standard.`
   },
+  {
+    slug: 'payment-terms-and-order-risk',
+    title: 'Paying a new supplier: what the deposit buys, and how to structure the balance so a problem stays fixable',
+    excerpt:
+      'You are not being asked to trust a stranger. You are being asked to agree on a sequence, and the sequence is the part you control.',
+    date: '2026-10-01',
+    tags: ['Payment', 'Trade terms', 'Wholesale'],
+    cover: '/products/hooded-medieval-cloak-victorian-steampunk.jpg',
+    sources: [
+      'r/Entrepreneur — What are the typical payment terms a Chinese supplier expects: pay in full up front, or 50 percent up front and 50 percent before shipment',
+      'r/Alibaba — Can someone please explain these payment terms: L/C, D/A, D/P, T/T, and the warning about suppliers who will accept untraceable payment',
+      'r/Alibaba — transaction fees: fees vary by payment method and cannot be avoided, but a cheaper method can be chosen',
+      'r/AlibabaImport — Anyone successfully granted Net60 payment terms: net terms are pre-qualified rather than granted on a first order',
+      'r/Alibaba — Supplier playing games with shipping, and My Experience With Dongguan Many Cans Co Ltd: Trade Assurance deadlines, evidence requirements and platform procedures decide disputes',
+    ],
+    body: `The deposit is the moment trust has to become structure, and it is the part of an order buyers dread most. Placing a first order with a supplier you have never met means sending money for goods that do not exist yet.
+
+The useful reframe is that you are not being asked to trust a stranger. You are being asked to agree on a sequence, and the sequence is the part you control.
+
+## The deposit is a materials payment, not a fee
+
+A deposit funds the materials and the start of production. That is why it exists even on small orders, and why it does not shrink to zero simply because the order is modest. The mechanics behind a low minimum are covered in our note on [minimum order quantities](/blog/cosplay-minimum-order-quantity).
+
+Ordinary terms are unremarkable: payment in full for small orders, or a deposit with the balance before shipment for larger ones. That is the baseline, not an insult. Longer terms such as net 30 do exist, but they are granted after a trading history rather than on a first order, and asking for them up front mostly signals that this is your first time.
+
+## The percentage matters less than the trigger
+
+The question worth negotiating is not how large the deposit is. It is what releases the next payment.
+
+- **Balance against a shipping date.** The money is gone before anyone knows what the goods are.
+- **Balance against shipping documents.** Better. You pay when the goods exist and have moved.
+- **Balance against the [inspection report](/blog/pre-shipment-inspection-and-defects).** Best for a first order. A defect found at that point is still correctable, because not all of the money has left.
+
+Buyer-friendly triggers cost money somewhere, because a supplier carrying risk prices that risk. It is usually cheaper to pay a fair price with a protective trigger than to take a discount in exchange for none.
+
+## Guard the rail the money travels on
+
+The largest single risk in a first payment is not the deposit percentage. It is where the money goes. When a supplier asks to be paid to a personal account, or outside the platform route that would otherwise record the transaction, the payment becomes unrecoverable by design. Being asked to route money around the traceable rails is the clearest warning available, and it is worth walking away over.
+
+Keep the payment inside a route with a record, and to the account name stated on the proforma invoice. A mismatch between the company you are buying from and the account you are paying is not a detail.
+
+Fees are a separate line and they vary by method. You cannot avoid them, but you can choose a cheaper route. Agree before the first payment who covers the sending charge and who covers the receiving charge, because discovering it afterwards is a small argument that feels like a bad start.
+
+## What platform protection actually is
+
+Platform protection is a dispute mechanism. It has a window in which a claim can be opened, evidence requirements, and procedures that decide the outcome. Accounts from buyers who have been through claims show the same pattern: the written contract terms and the evidence decide the result, not the fact that you were wronged.
+
+That makes it a protection for contractual obligations. It is not a quality guarantee. The things that make a claim winnable are the ones it cannot supply for you: a [specification with tolerances](/blog/custom-sizing-and-grading), an approved sample, a [packaging spec](/blog/retail-ready-packaging-and-private-label), and an [inspection report](/blog/pre-shipment-inspection-and-defects).
+
+Someone whose claim went badly will tell you protection is useless. Someone who has never claimed will tell you it is sufficient. Neither is a specification, and the document that settles the argument is the purchase order.
+
+## The documents that decide who is holding the risk
+
+- **Proforma invoice.** The first written statement of price, quantity, terms and delivery. Read it against what was agreed before paying anything.
+- **Purchase order.** The document that should carry the specification, the tolerances, the packaging, the inspection terms, the payment trigger and the dates. If it is not in the purchase order, it was not agreed.
+- **Bill of lading.** The document that moves the goods, and whoever controls its release controls the goods. A telex release delivers without the original documents, which is convenient and does change your position; know which one applies to your shipment.
+- **Inspection report.** The payment trigger, not a memento.
+
+## Three structures, and what each one trades
+
+- **Small first order, small money.** Paying in full up front is defensible when the sum is small and the specification and the inspection are agreed. The trade is deliberate, not naive.
+- **Standard.** Deposit now, balance against the inspection report. This is the structure to ask for by default.
+- **Larger or unfamiliar supplier.** Deposit, balance against shipping documents, and a retention released after arrival for the first order. Expect resistance, and expect to pay for it.
+- **Middle path.** Split the first order into two lots, so the second payment depends on the first arriving correct. It converts one large bet into two smaller ones without renegotiating anything.
+
+## What to send instead of "what are your payment terms"
+
+- Deposit percentage, against the total order value.
+- The event that releases the balance.
+- The account name and the payment rail, which must match the invoice.
+- Who pays the charges at each end.
+- The currency, and which rate applies if you are not invoicing in it.
+- The documents released against the balance.
+- What happens if the inspection fails.
+
+Those seven lines are the difference between a deposit and a bet. If you are placing a first order and want terms quoted against a written specification, [send us the order detail](/inquiry), or see the [custom and OEM page](/custom) for how we structure a first run.`
+  },
 ];
 
 export const sortedPosts = [...POSTS].sort((a, b) => (a.date < b.date ? 1 : -1));
