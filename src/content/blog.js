@@ -763,6 +763,95 @@ Someone whose claim went badly will tell you protection is useless. Someone who 
 
 Those seven lines are the difference between a deposit and a bet. If you are placing a first order and want terms quoted against a written specification, [send us the order detail](/inquiry), or see the [custom and OEM page](/custom) for how we structure a first run.`
   },
+  {
+    slug: 'sample-round-and-approval',
+    title: 'The sample round: what a prototype proves, and why the sample you approve is not the product',
+    excerpt:
+      'Approving a sample is not saying that it looks good. It is saying that this object is now the standard, and the bulk will be compared against it.',
+    date: '2026-10-02',
+    tags: ['Sampling', 'Quality control', 'Custom', 'OEM'],
+    cover: '/products/white-ostrich-feather-princess-mask.jpg',
+    sources: [
+      'r/FulfillmentByAmazon — Sample different from actual product: samples from three suppliers were all high quality, and the bulk order from one was not',
+      'r/ecommerce — Ordered custom sample, but they suck, now what',
+      'r/Alibaba — For new buyers: samples are not just about the product',
+      'r/EtsySellers — Is the prototype sample the same as the production sample',
+      'Oceanportlink — Prototype, pre-production or production sample: buyer accounts describe samples in unexpected materials and bulk that did not resemble the approved sample, noted as anecdotal',
+      'Published supplier explainers — sample and mass production quality always differ slightly, and pre-production and bulk samples exist to catch it early',
+      'Published sourcing guides — sample orders cost more per unit because setup dominates at a quantity of one',
+    ],
+    body: `A sample is the cheapest line in an order and the one that decides everything after it. It is also the most misunderstood, because the word covers three different objects with three different jobs.
+
+## Three samples, three jobs
+
+- **The development sample.** Proves the design can be made at all. It is usually built by hand in a sample room, by a different person and at a different pace from the line. At a quantity of one, setup dominates, which is why the unit price looks shocking.
+- **The pre-production sample.** Made from the materials you ordered, using the process that will run the order. This is the one worth approving.
+- **The production sample.** Pulled from the finished lot. This is what proves the lot matches what you approved, and it is the piece an inspector compares against.
+
+Buyers conflate these three constantly, and the confusion is where most of the argument lives. Approving a development sample and treating it as the standard for a production run sets up a dispute neither side can win, because the object you approved was never intended to be reproducible at volume.
+
+## Why the sample and the bulk differ
+
+A sample room and a production line are different places. The sample was made by someone with more time, likely hand-trimmed, on a machine running slowly enough to watch. The line runs at speed, and speed changes the result.
+
+The materials differ too. A sample is often cut from whatever stock was on the shelf, while the bulk order uses the batch that was actually purchased, with its own dye lot. Published supplier explainers are consistent on the useful part of this: sample and mass production quality will always differ slightly, which is manufacturing reality rather than dishonesty, and it is why pre-production and production samples exist at all.
+
+That does not mean any difference is acceptable. It means the acceptable difference has to be written down before you have the argument, which is the point of a [fabric specification](/blog/cosplay-fabric-specification) and a [size specification with tolerances](/blog/custom-sizing-and-grading). Without a tolerance, the sentence "slightly different" cannot be tested, and a disagreement that cannot be tested cannot be resolved.
+
+## What the sample round costs, and what the fee tells you
+
+Paying for samples is normal. A sample costs more per unit than the same item in bulk because the setup is spread over one piece instead of hundreds, and you pay the freight on top. A fee that is credited against the order later is a common and reasonable arrangement.
+
+A supplier who waives the sample fee is not automatically hiding something, but it is worth asking what they are sending. A catalogue item pulled from stock is not a sample of your product, and it tells you nothing about whether your design is buildable.
+
+Expect one to three rounds, and budget the calendar time rather than the money. Each round costs a week or more, and each round is a chance to send a numbered list of corrections rather than a paragraph of impressions.
+
+## What the sample request should contain
+
+- The specification, including the tolerances.
+- The reference image, and the size to be made.
+- What the item is for, in one line. A prop that has to be held and a prop that has to be photographed have different requirements.
+- The date you need it by.
+- A question about where it will be made: the sample room or the line.
+
+That last question is the one that changes behaviour, because a supplier who intends to run your order properly will be able to answer it.
+
+## Approval is a decision to freeze a reference
+
+Approving a sample is not saying that it looks good. It is saying that this object is now the standard, and that the bulk will be compared against it.
+
+So make the approval physical. Sign and date the sample, keep one on each side, and photograph it with a scale in the frame. Then write down, in the same document, which properties are allowed to vary and by how much. That signed sample is what an [inspection](/blog/pre-shipment-inspection-and-defects) is measured against, and it is one of the few things that makes a claim winnable if the lot arrives wrong.
+
+If several suppliers are sampling the same design, send identical requirements to all of them. Comparing what they return against what they charge only works if the request was the same.
+
+## When the sample is wrong
+
+- **Correct and re-sample.** The right answer when the design is close and the fault is specific.
+- **Switch supplier.** The right answer when the fault is in what they are able to make at all.
+- **Accept with a price change.** The right answer when the product still sells and the defect is cosmetic.
+
+What you should not do is pay a production deposit against a sample you have not approved. Buyers describing bad sample rounds report the same sequence more than once: a sample that was clearly wrong, followed by a request for the deposit before the correction was made. Those accounts are anecdotal and cannot establish how often it happens, but the sequence is worth recognising, because that second payment is the last moment you hold real leverage — which is the subject of the note on [payment terms and order risk](/blog/payment-terms-and-order-risk).
+
+Anger is not a correction. The threads where a buyer says the sample is unusable and asks what to do next are almost always about a fault that could have been fixed, described in a way the supplier could not act on.
+
+## What a sample cannot tell you
+
+A sample cannot tell you what the production line will produce. It cannot tell you the real lead time. It cannot tell you how the supplier behaves when something goes wrong, which is the only supplier quality that matters once the deposit has been paid.
+
+Those are what the pre-production sample, the production sample and the inspection are for. The sample round is the beginning of the control system, not a replacement for it.
+
+## The sample request, as a list
+
+- The specification, with tolerances.
+- The reference image and the size.
+- One line on what the item is for.
+- The date it is needed by.
+- Where it will be made.
+- Whether the fee is credited against the order.
+- Which points will be measured and recorded on the sample.
+
+Seven lines, and the sample stops being a lottery. If you want a prototype quoted against a written specification, [send us the detail](/inquiry), or see the [custom and OEM page](/custom) for how a first run is structured.`
+  },
 ];
 
 export const sortedPosts = [...POSTS].sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -772,7 +861,11 @@ export function getPost(slug) {
 }
 
 export function formatDate(value) {
-  return new Date(value).toLocaleDateString('en-GB', {
+  // Build the date from its parts instead of parsing the string. An ISO date-only
+  // string is read as UTC midnight, so formatting it in a timezone behind UTC (the
+  // build machine) rendered every article one day early on the live site.
+  const [year, month, day] = value.split('-').map(Number);
+  return new Date(year, month - 1, day).toLocaleDateString('en-GB', {
     day: 'numeric',
     month: 'short',
     year: 'numeric',
