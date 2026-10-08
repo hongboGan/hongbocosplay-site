@@ -852,6 +852,96 @@ Those are what the pre-production sample, the production sample and the inspecti
 
 Seven lines, and the sample stops being a lottery. If you want a prototype quoted against a written specification, [send us the detail](/inquiry), or see the [custom and OEM page](/custom) for how a first run is structured.`
   },
+  {
+    slug: 'product-safety-labels-and-compliance',
+    title: 'Safety labels and market compliance: the questions a supplier cannot answer for you',
+    excerpt:
+      'There is no such thing as a compliant product in the abstract. There is a product that is compliant for a market, sold through a channel, at an age grade.',
+    date: '2026-10-08',
+    tags: ['Compliance', 'Safety', 'Wholesale'],
+    cover: '/products/fluffy-faux-fur-wolf-ears.jpg',
+    sources: [
+      'r/BJDRecastPositive — US customs blocking HTS codes: vague descriptions such as plastic parts or cosplay pieces invite manual inspection, and intended use affects whether CPSC holds apply',
+      'r/Buyee — what passes a CPSC visual inspection: label language, age marking and compliance paperwork are what is looked at',
+      'r/Buyee — recourse if customs seizes and destroys a shipment',
+      'r/AnimeFigures — new US customs regulations for importers, buyer discussion',
+      'r/ToysTesting — EN 71 parts 1 to 3 cover physical and mechanical testing, flammability and heavy metals',
+      'analysisoffear.com — CPSIA for handmade childrens products: a childrens product is one intended primarily for children twelve and under, and business size is not an exemption',
+      'Alibaba seller guides — US costume and childrens clothing compliance, including CPSIA requirements and flammability testing against 16 CFR Part 1610',
+      'r/Masks and r/cosplayprops — latex allergy concerns raised by mask and prop users',
+    ],
+    body: `There is a category of failure that has nothing to do with quality. The goods are exactly what was ordered, and they still cannot be sold, because a requirement attached to the market rather than to the product was never dealt with.
+
+## The failure that is not a quality problem
+
+A defect is a product problem, and it has a physical answer: rework it, remake it, or price it. A compliance problem is a marking and paperwork problem, and it produces entirely different symptoms. A shipment held at the border. A listing taken down. A retailer declining the delivery at their own dock.
+
+The buyer usually meets it after the money has already moved, which is why it is worth an hour before the order instead of a month afterwards.
+
+## What the requirements actually cover
+
+It helps to see them as five families rather than one subject called compliance.
+
+- **Flammability.** Applies to textiles and costumes. In the United States, clothing textiles are tested against a named standard, 16 CFR Part 1610, and children's sleepwear sits under a stricter regime of its own.
+- **Chemical limits.** Lead and phthalates in children's products, heavy metals in toys and coatings, and the substance restrictions that apply in the European Union.
+- **Physical and mechanical.** Small parts that come away, sharp edges, cords and loops that can catch. The EN 71 series covers these categories for toys, alongside flammability and heavy metal migration.
+- **Labelling and warnings.** Which language, which age marking, which material statement, which warning text — and where on the item it has to appear. This is the level of the [packaging specification](/blog/retail-ready-packaging-and-private-label) that most buyers remember last.
+- **Age grading.** Whether the item is categorised as a children's product at all. In the United States that turns on whether it is intended primarily for children twelve and under, and the categorisation changes which regime applies.
+
+That last one deserves attention rather than assumption, because cosplay leans adult while a great deal of costume imagery does not look it.
+
+## The market decides, and the channel decides again
+
+There is no such thing as a compliant product in the abstract. There is a product that is compliant **for a market, sold through a channel, at an age grade**.
+
+The market is the destination. The channel is how it reaches the buyer: a marketplace with its own compliance gate, your own storefront, or a physical retailer who will ask for documents before they accept a pallet. Those three are not the same requirement, and passing one does not imply the others.
+
+This is why a supplier cannot answer the compliance question for you. The missing variable is where you sell, and they do not know it.
+
+## The label is the part that is visible
+
+Accounts from buyers whose parcels were stopped converge on the same detail: what the inspector can see without opening anything. Whether the safety text is in the buyer's language. Whether an age marking is present on the box. Whether the wording on the label agrees with what was declared.
+
+The declaration matters for the same reason. Vague descriptions on customs paperwork — a generic material phrase instead of a specific one, a category name instead of the actual use — invite a manual look, and a manual look is where a shipment stops being a delivery schedule and becomes a project.
+
+Precise naming is one skill applied in two places: the label and the paperwork.
+
+## Latex, and the warning buyers raise themselves
+
+Latex allergy is the one safety question cosplay buyers ask unprompted, and they ask it about both masks and flexible props such as wings.
+
+The honest answer to it is not a reassurance. It is naming the material and being able to say what the item contains. A specification that never names the material leaves the buyer unable to answer their own customer, which is a worse outcome than a stated limitation.
+
+## What a supplier can honestly give you, and what they cannot
+
+A supplier can give you facts:
+
+- The material composition, in percentage terms rather than adjectives.
+- The standard the item was tested against, the issuing laboratory, and the date of the report.
+- Whether the report covers the finished product or only the raw material.
+- The label artwork, exactly as it will be printed, including language.
+- The age grading, and what makes it that rather than something else.
+- Who is named as the importer of record.
+
+What no supplier can honestly give you is a guarantee that the item is compliant in a market and a channel they were never told about. A supplier who answers "yes, it is compliant" without asking where you sell has not answered the question, they have ended it.
+
+That is the same test as everywhere else in this series: the answer that shows the working is the one worth trusting. A vague greeting is not a specification — see the note on [questions that separate a maker from a reseller](/blog/custom-cosplay-mask-commissioning) for the same instinct applied to a different decision.
+
+## The questions, as a list
+
+- Which market, and which channel, are you selling through?
+- Which standard was this tested to, by which laboratory, and when?
+- Does the report cover the whole product or only the material?
+- What is the material composition, in percentage terms?
+- What exactly does the label say, and in which language?
+- What is the age grading, and what makes it that?
+- Who is the importer of record?
+- Which warnings are printed, and where on the item do they appear?
+
+There is a boundary worth stating plainly: the requirements differ by market, they change over time, and none of the above is legal advice. The point is not to memorise a rulebook. It is to make the conversation specific enough that a real answer is possible, and to know which parts of it are not the supplier's to decide.
+
+If you are sourcing a run for a specific market and want the specification quoted with the safety and labelling questions settled up front, [send us the detail](/inquiry), or see the [custom and OEM page](/custom) for how a first order is structured.`
+  },
 ];
 
 export const sortedPosts = [...POSTS].sort((a, b) => (a.date < b.date ? 1 : -1));
