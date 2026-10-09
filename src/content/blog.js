@@ -946,7 +946,7 @@ If you are sourcing a run for a specific market and want the specification quote
     slug: 'claims-and-remedies-after-delivery',
     title: 'When the goods arrive wrong: the claim, the remedy, and what the record decides',
     excerpt:
-      'The instinct when a pallet arrives wrong is to argue about fairness. The process does not run on fairness — it runs on what was agreed in writing before production, and what you can show after it.',
+      'A claim is not won by being right. It is decided by the standard agreed before production and the record kept after delivery — and by asking for the remedy that is actually obtainable rather than the one that sounds fair.',
     date: '2026-10-09',
     tags: ['Claims', 'Quality control', 'Wholesale'],
     cover: '/products/pirate-lolita-blouse-long-sleeves.jpg',
