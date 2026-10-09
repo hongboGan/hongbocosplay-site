@@ -942,6 +942,103 @@ There is a boundary worth stating plainly: the requirements differ by market, th
 
 If you are sourcing a run for a specific market and want the specification quoted with the safety and labelling questions settled up front, [send us the detail](/inquiry), or see the [custom and OEM page](/custom) for how a first order is structured.`
   },
+  {
+    slug: 'claims-and-remedies-after-delivery',
+    title: 'When the goods arrive wrong: the claim, the remedy, and what the record decides',
+    excerpt:
+      'The instinct when a pallet arrives wrong is to argue about fairness. The process does not run on fairness — it runs on what was agreed in writing before production, and what you can show after it.',
+    date: '2026-10-09',
+    tags: ['Claims', 'Quality control', 'Wholesale'],
+    cover: '/products/pirate-lolita-blouse-long-sleeves.jpg',
+    sources: [
+      'r/Alibaba — refund policy discussion asking how claims for defects found after receiving an order were handled, and whether full or partial refunds resulted',
+      "r/Alibaba — seller cannot fulfil the rest of my order: partial shipment, indefinite delays, and a refund described by the seller as unlikely",
+      'r/Alibaba — a dispute described as running nearly 17 months over goods that were never shipped, with no refund resolved',
+      'r/Alibaba — Trade Assurance dispute where the goods sat held at customs while the mediator recorded that the seller refused the parcel',
+      'r/Alibaba — refunds thread: a buyer reporting that raising a claim through the payment provider rather than the platform recovered the money, and advising keeping the written messages as documentation',
+      'r/paypal — buyer describing a supplier who admitted sending the wrong product and repeatedly offered partial refunds, and who did not want the goods returned',
+      'r/Alibaba and r/DropshippingTips — recurring buyer complaints about not being able to establish what actually happened, and the evidence burden that follows',
+      'r/Alibaba — seller sent defective items and wants to run: buyers advising on the refund route and the sequence of steps',
+    ],
+    body: `Every article so far has been about preventing a problem. This one is about the case where one got through — which is the case a buyer is most likely to meet, because it is the one nobody plans for.
+
+## A claim is a documentation problem, not a moral one
+
+The instinct when a pallet arrives wrong is to argue about fairness. The process does not run on fairness. It runs on two things: what was agreed in writing before production, and what you can show after it. A supplier who is entirely at fault can win a dispute with no record. A supplier who is only partly at fault can lose one with a good record.
+
+That is uncomfortable, and it is the reason claims are worth an hour of preparation rather than a week of argument.
+
+## What decides it was decided before shipping
+
+If the order had a pre-shipment inspection against an approved sample, with measurements and photographs, a claim becomes a comparison. You are not asserting that something is bad; you are showing that this unit is 3 cm outside the tolerance both sides signed.
+
+If there was no inspection, the same claim reduces to one account against another. The sources buyers write up after these disputes are consistent about what that costs: cases described as running for months, sometimes more than a year, with refunds arriving as partial amounts or not at all. The slow part is not bad faith. It is that no document exists which both sides agreed beforehand.
+
+This is the whole argument of the [pre-shipment inspection note](/blog/pre-shipment-inspection-and-defects), and a claim is where its value is realised.
+
+## A defect and a disappointment are not the same claim
+
+These get mixed together in the first angry message, and the mixing is what weakens the claim.
+
+A **defect** is a measurable departure from what was agreed: a count short of the packing list, a colour that does not match the approved swatch, a measurement outside the tolerance, a finish that failed before the goods were worn, damage in transit that the packaging should have prevented. Each of these can be verified by someone who was not present.
+
+A **disappointment** is a decision that came out badly — too many pieces, a shade the market did not want, a season that moved. It is a real loss and a real problem. It is not a claim, and presenting it as one gives the supplier an easy answer that also disposes of the genuine defects listed next to it.
+
+Separate them before you write anything. Make the defect claim alone, and leave the rest for the conversation it belongs to.
+
+## Documenting it so it cannot be argued with
+
+- **Photograph against the reference**, not in isolation. The approved sample, the swatch or the agreed specification page next to the unit in question is worth more than twenty photographs of a flaw.
+- **Put a scale in frame.** A tape measure reading the actual dimension removes the argument about whether 3 cm is really 3 cm.
+- **Count.** How many of how many, per size or per colour. A percentage of a defined batch is a number; "a lot of them" is not.
+- **Keep the paperwork**: packing list, carton labels, the inspection report, the approved sample itself.
+- **Do not dispose of the goods.** No goods, no claim — however useless they look.
+- **Write inside the window.** Whatever the claim period is, it is almost always shorter than the time it takes to get an answer, and it starts from arrival rather than from when you opened the carton.
+
+## The remedy ladder, from cheapest to last resort
+
+Buyers usually ask for the first remedy on this list when the last one on it is the one that will actually happen. Knowing the ladder is what lets you ask for something obtainable.
+
+- **First: replacement in the next order.** The most common real outcome, because it costs the supplier material rather than freight, and it costs you nothing you were not going to spend. Practical when you reorder anyway.
+- **Second: credit against an outstanding balance.** Straightforward if the balance has not been released. This is one more reason the [structure of the balance](/blog/payment-terms-and-order-risk) matters: money you have not paid is leverage you still have.
+- **Third: local rework at the supplier's cost.** For a garment that needs a seam redone, paying a local tailor to fix it and deducting the invoice is frequently cheaper for both sides than any shipment of goods in either direction.
+- **Fourth: a partial refund.** What most disputes settle on. Ask for it in a defined amount linked to the number of affected units, not as a percentage of the mood.
+- **Fifth: return and refund.** Rarely practical for bulk goods, because the freight back is often a large fraction of the goods' value, and the goods are what the supplier wanted least. It is the remedy buyers ask for first and accept last.
+- **Last: the payment rail.** Where a card or a payment platform is involved, the dispute mechanism sits outside the supplier relationship and is genuinely useful as a backstop. Two honest notes: it takes weeks to months, and it is a decision to end the relationship. A buyer who files and then wants to reorder has usually closed that door.
+
+Which of these is available is decided by one thing: whether the balance was released before the inspection was read. See [why the sequence is the part you control](/blog/payment-terms-and-order-risk).
+
+## The three numbers to settle before the order
+
+You cannot agree a remedy after a failure; you can only agree which remedy applies to which failure. Three lines in the order do that.
+
+- **The standard.** The approved sample, the specification sheet and the tolerances. Without the last one, "within spec" means whatever is convenient. The methods are in the [sizing and grading note](/blog/custom-sizing-and-grading) and the [fabric specification note](/blog/cosplay-fabric-specification).
+- **The claim window.** How many days after arrival a claim can be raised, and from which event that clock runs.
+- **The remedy per failure mode.** Short shipment, colour outside tolerance, measurements outside tolerance, transit damage. Name what happens for each, in advance. It is five minutes of writing and it removes the entire negotiation.
+
+A sample is where this starts: approving one is not saying it looks good, it is deciding what the bulk will be measured against — see [what the sample round actually fixes](/blog/sample-round-and-approval). Packaging belongs in the same list, because transit damage is a specification failure with a [packaging cause](/blog/retail-ready-packaging-and-private-label).
+
+## What to send instead of "the order is wrong"
+
+One message, with the structure of a claim sheet rather than a complaint:
+
+- Order reference, invoice number, arrival date.
+- What was agreed: the specification line, sample reference or tolerance.
+- What arrived: quantity affected, out of what total, per size or colour.
+- The evidence: photographs against the reference, measurements, the packing list.
+- The requested remedy, chosen from the ladder above.
+- The deadline you would like an answer by.
+
+Then one more sentence, and it is the one with the most force behind it: that you intend to place the next order and would like to settle this in a way that keeps that possible.
+
+## The position you actually hold
+
+A supplier's incentive to fix a first order is the second one. That is not a threat to deploy, it is the reason a first order should be small enough that a bad one is survivable, and large enough that a good one is worth repeating — the same logic behind [how a minimum is really a mechanism](/blog/cosplay-minimum-order-quantity).
+
+Two boundaries, stated plainly. Every platform has its own dispute rules and its own windows, and they override anything written here. And none of this is legal advice; where the amounts justify it, get proper advice rather than a forum thread.
+
+If you are sourcing a run and want the specification, the tolerances and the claim terms written into the order before production starts, [send us the detail](/inquiry), or see the [custom and OEM page](/custom) for how a first order is structured.`
+  },
 ];
 
 export const sortedPosts = [...POSTS].sort((a, b) => (a.date < b.date ? 1 : -1));
