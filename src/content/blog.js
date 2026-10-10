@@ -1039,6 +1039,94 @@ Two boundaries, stated plainly. Every platform has its own dispute rules and its
 
 If you are sourcing a run and want the specification, the tolerances and the claim terms written into the order before production starts, [send us the detail](/inquiry), or see the [custom and OEM page](/custom) for how a first order is structured.`
   },
+  {
+    slug: 'design-ownership-and-artwork',
+    title: 'Who owns the design when you commission it, and the artwork question buyers leave until last',
+    excerpt:
+      'Every custom order contains two assets that are easy to confuse: the thing that gets made, and the permission to sell it. What to settle in writing before anything is cut — and why a maker may decline the reference photo.',
+    date: '2026-10-10',
+    tags: ['Design', 'Custom', 'OEM', 'Wholesale'],
+    cover: '/products/girl-sequin-embroidery-puffy-prom.jpg',
+    sources: [
+      'r/EtsySellers — another seller copied my design: a message asking for removal that went nowhere, and the observation that no IP was registered for the design',
+      'r/EtsySellers — someone copied my design, I reported them for copyright infringement and it was taken down, and they added a new listing for the same item',
+      'r/EtsySellers — how do you deal with other makers in your niche copying: exact copies posted as if original',
+      'r/AmazonMerch — someone copied my design and got mine taken down: the difference a registered mark made to the outcome',
+      'Facebook maker group — 1:1 copies of a design being resourced from China and sold by others',
+      'r/Etsy — is it legal to sell cosplay and props from anime: widespread uncertainty among sellers about licensing',
+      'r/CosplayHelp and r/comiccon — recurring community threads asking how cosplayers and convention vendors operate without licences',
+      'Nolo, Can You Legally Sell Fan Art Online (updated 28 Oct 2025) and Trademarkia, Cosplay & IP: Rights, Risks, & How to Stay Legal (19 Aug 2025) — plain-language summaries of the risk in commercialising a protected character',
+      'Dunitz & Company, "That Company Copied My Design — It Happens All The Time" — a maker describing how routine copying is',
+    ],
+    body: `Two questions arrive at the end of almost every custom conversation, usually in the same message and usually too late. Who owns the design? And can you make this character for me?
+
+The first is a commercial question with a clear answer that has to be agreed before production. The second is a rights question that a manufacturer cannot answer for you, and the answer a buyer wants is often not the answer they can have.
+
+## Two different things get called "your design"
+
+The phrase covers two assets that are sold, priced and owned separately.
+
+- **The object.** The pattern, the mould, the digital model, the tech pack. Physical and digital tooling that produces the item.
+- **The right to sell it.** Who may make and offer this design, to whom, in which markets, for how long.
+
+Paying for development usually buys the first. It does not automatically buy the second. A maker can quite reasonably build a pattern to your brief, invoice you for the development, and still consider itself free to offer the same item to another buyer — unless something in the order says otherwise. Almost every account of a copied design starts with an assumption that the payment itself settled the question.
+
+## What you own by default, and what has to be asked for
+
+Nothing here is universal; it depends on what the order says and on the law where you would enforce it. But these are the points worth writing down.
+
+- **The deliverable.** Say whether you are buying the finished goods, the pattern, the digital file, or all three. A pattern you have the file for can be moved to another maker. One you do not have means starting again.
+- **Exclusivity, with a term and a territory.** "Exclusive" alone means nothing. Exclusive for how long, in which countries, for which product lines. Exclusivity is normally paid for — either through a higher unit price, a development fee, or a minimum volume. A maker agreeing to exclusivity for free on a 50-piece order is making a promise that will not survive its own sales team.
+- **What happens when it ends.** Who keeps the pattern when you stop ordering. Whether the design can be sold to anyone else afterwards. Whether it can appear in the maker's portfolio or on its own storefront — this one matters more than buyers expect, because a portfolio shot of your product is how your competitor finds it.
+- **The development fee, and what it buys.** A tooling charge is usually amortisation of setup cost, not a purchase of the tool. Ask which it is. The difference decides whether the mould is yours at the end.
+
+## The problem nobody plans for: the catalogue copy
+
+The pattern across buyer accounts is consistent, and it is worth reading before deciding how much protection paperwork is enough.
+
+- A seller finds another storefront listing a near-identical item. The first instinct is a message asking them to remove it, which ends the way that kind of message usually ends.
+- The follow-up is a platform copyright report. Recurring reports describe the listing coming down and reappearing shortly afterwards as a new listing for the same item.
+- Several of these accounts share the same missing piece: no registered right in the design. Without one, "I designed it" is a claim; with one, it is an enforceable position. Where the complaining party happened to hold a registered mark, the accounts describe a different and faster outcome.
+
+The practical reading is not that paperwork prevents copying. It is that the copies arrive anyway, and what decides whether you can do anything about it is whether you have a registered right, proof of first use, and a design distinctive enough that a copy is obvious rather than arguable.
+
+And the design worth copying is exactly the one that sells — [the same asymmetry that makes a good first order worth repeating](/blog/cosplay-minimum-order-quantity) is what makes a good design worth imitating.
+
+## The artwork question, and why a maker may refuse it
+
+The second question is the one buyers leave until last, and it is the one where the answer is not a matter of price.
+
+A buyer sends a reference: a character from a film, a game, a comic, or a piece of fan art drawn by someone else, and asks for it to be made. What is actually being requested is a manufacturing run of a product that, sold commercially, is very likely to infringe someone's rights. The community discusses this openly and without much agreement about where the line sits: cosplayers and con vendors regularly ask how others get away with it, whether a booth will be shut down, and whether personal costuming is treated differently from selling. The plain-language legal summaries tend to be more direct — commercialising a protected character without permission carries real risk, and a licence is what changes that, not a disclaimer.
+
+Two consequences for a buyer sourcing from a factory.
+
+- **A maker cannot licence a character for you.** It has no rights to grant and no way to acquire them for your product. If a listing says otherwise, that is a sales answer rather than a rights answer.
+- **Some makers will decline, and that is information.** A workshop that quietly accepts any reference has told you how it handles every other instruction you give it. A workshop that asks who holds the rights is telling you it reads the brief.
+
+Our own practice, stated plainly: we build generic and original designs — masks, garments, props, wigs and armour defined by form, material and construction, not by a franchise — and we do not put character names or franchise marks on listings or in artwork we supply. That is a positioning choice as much as a compliance one. It is also why our catalogue is described by category rather than by the property a piece resembles.
+
+## What to put in the order
+
+Seven lines turn this from a conversation you have after the money moves into a term you agreed before it did.
+
+- The deliverable: goods, pattern, both, and in which format.
+- Who holds the pattern and the digital file, during the order and after it.
+- Exclusivity: yes or no, for how long, in which territories, for which items.
+- Whether the item may appear in the maker's portfolio, and if the answer is yes, whether it may be named as yours.
+- What happens to the tooling when the relationship ends.
+- A warranty from you on the artwork you supplied: that you have the right to have it made. A maker asking for this is protecting both sides.
+- A short, dated record of what was agreed — the same habit that settles [a claim after delivery](/blog/claims-and-remedies-after-delivery) settles a disagreement about the design.
+
+The pattern is the reference the bulk is built against, which is why this conversation belongs next to [what the sample round actually fixes](/blog/sample-round-and-approval) rather than after it.
+
+## The uncomfortable part
+
+A design that works will be copied. Speed, brand and the ability to prove you were first are what you actually hold; secrecy on its own is a delaying tactic that costs you the marketing.
+
+Two boundaries, as always. Intellectual property law varies by country and changes, and commercialising a protected character is a genuine legal risk rather than a technicality. None of this is legal advice, and where the amounts justify it, the right next step is a lawyer rather than a supplier.
+
+If you have an original design to develop — and want the pattern ownership, exclusivity and artwork terms set out before anything is cut — [send us the brief](/inquiry), or look at how we handle [custom and OEM work](/custom) and [commissioned masks](/blog/custom-cosplay-mask-commissioning) in particular.`
+  },
 ];
 
 export const sortedPosts = [...POSTS].sort((a, b) => (a.date < b.date ? 1 : -1));
