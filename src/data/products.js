@@ -4,6 +4,8 @@ export const CONTACT = {
   email: 'sales06@hoburn.group',
   whatsappDisplay: '+86 18872213891',
   whatsappUrl: 'https://wa.me/8618872213891',
+  instagramDisplay: '@lynia_hongbocostume',
+  instagramUrl: 'https://www.instagram.com/lynia_hongbocostume/',
 };
 
 // Display order is the business order: merchandise first, costumes alongside.

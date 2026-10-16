@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { CATEGORIES, CONTACT, countIn } from '../data/products.js';
-import { MailIcon, WhatsAppIcon } from './icons.jsx';
+import { InstagramIcon, MailIcon, WhatsAppIcon } from './icons.jsx';
 
 function Wordmark() {
   return (
@@ -191,6 +191,9 @@ export default function Layout() {
             <p>
               <a href={CONTACT.whatsappUrl}>WhatsApp {CONTACT.whatsappDisplay}</a>
             </p>
+            <p>
+              <a href={CONTACT.instagramUrl}>Instagram {CONTACT.instagramDisplay}</a>
+            </p>
           </div>
         </div>
       )}
@@ -246,6 +249,9 @@ export default function Layout() {
               <li>
                 <a href={CONTACT.whatsappUrl}>WhatsApp {CONTACT.whatsappDisplay}</a>
               </li>
+              <li>
+                <a href={CONTACT.instagramUrl}>Instagram {CONTACT.instagramDisplay}</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -255,15 +261,28 @@ export default function Layout() {
         </div>
       </footer>
 
-      <a
-        ref={waRef}
-        className="wa"
-        href={CONTACT.whatsappUrl}
-        aria-label={`WhatsApp ${CONTACT.whatsappDisplay}`}
-      >
-        <WhatsAppIcon />
-        <span>WhatsApp</span>
-      </a>
+      {/* The fixed corner holds both contact buttons. Instagram sits to the left of WhatsApp, so
+          WhatsApp keeps the corner it already had and nothing jumps when the pair is added. */}
+      <div ref={waRef} className="wa">
+        <a
+          className="wa__btn"
+          href={CONTACT.instagramUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Instagram ${CONTACT.instagramDisplay}`}
+        >
+          <InstagramIcon />
+          <span>Instagram</span>
+        </a>
+        <a
+          className="wa__btn wa__btn--wa"
+          href={CONTACT.whatsappUrl}
+          aria-label={`WhatsApp ${CONTACT.whatsappDisplay}`}
+        >
+          <WhatsAppIcon />
+          <span>WhatsApp</span>
+        </a>
+      </div>
     </>
   );
 }

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { CONTACT, getProduct, shortTitle } from '../data/products.js';
 import { usePageMeta } from '../lib/seo.js';
-import { MailIcon, WhatsAppIcon } from '../components/icons.jsx';
+import { InstagramIcon, MailIcon, WhatsAppIcon } from '../components/icons.jsx';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
@@ -244,6 +244,18 @@ export default function Inquiry() {
                 <span>
                   <strong>{CONTACT.whatsappDisplay}</strong>
                   <em>WhatsApp — fastest for quick questions</em>
+                </span>
+              </a>
+              <a
+                className="contact-way"
+                href={CONTACT.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <InstagramIcon size={20} />
+                <span>
+                  <strong>{CONTACT.instagramDisplay}</strong>
+                  <em>Instagram — new pieces and finished commissions</em>
                 </span>
               </a>
             </div>
