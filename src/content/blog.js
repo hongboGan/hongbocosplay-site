@@ -6,6 +6,136 @@
 
 export const POSTS = [
   {
+    slug: 'dog-halloween-costumes-spec',
+    title: 'Dog Halloween costumes: the three measurements that decide whether it sells',
+    excerpt:
+      'A pet costume is not a small human costume. It is sold on a photograph and worn by an animal that cannot read the label, so the return rate is decided by the specification rather than the design.',
+    date: '2026-10-19',
+    tags: ['Pet', 'Costumes', 'Custom / OEM'],
+    cover: '/products/hooded-witch-cape-halloween-costume.jpg',
+    body: `The phrase hides a spec problem. A human costume is sized for a body that can read a label, complain, and adjust a strap. A dog cannot do any of those things, and the person paying for the costume is not the one wearing it. That single difference moves almost all of the risk from the design to the specification.
+
+This note is for buyers adding a pet line, or for a costume factory being asked whether the work transfers. The sewing transfers. The sizing knowledge does not.
+
+## A pet costume is sized by three numbers, not a letter
+
+Retail pet costumes are sold as S, M, L, XL, which is a merchandising convention rather than a fit system. What actually decides whether the garment goes on the animal is three measurements:
+
+- **Neck circumference** — decides whether it goes over the head at all, and whether the closure can sit without pressure on the throat.
+- **Chest girth**, measured just behind the front legs — the controlling dimension for almost every style, and the one that most often rules a dog out of a "large".
+- **Back length**, from the base of the neck to the base of the tail — decides whether the body of the costume covers the dog or ends halfway down its spine.
+
+The gap between what those numbers look like in a size chart and what dogs actually measure is not small. A large-breed owner describing a labrador-sized dog gave the numbers as a 25-inch neck and a 36-inch chest — which falls outside the top of many retail ranges sold as "XL". A buyer who maps breeds to letters will find out about this from returns, not from the sample.
+
+Veterinary guidance on the same subject is consistent about both directions of error: a costume that is too tight restricts movement and breathing, and one that is too loose becomes a tripping hazard or slides over the eyes. There is no "it will do" in the middle. So the chart has to carry a tolerance, and the range has to be honest about the breeds it actually covers. [How a size chart is graded](/blog/custom-sizing-and-grading) is the same discipline applied to people; the measurement points differ, the rigour does not.
+
+## The failure that costs the most is the photograph, not the stitching
+
+A pet costume sells on a still image of a dog standing in it. It succeeds or fails on a moving animal that trots, sits, shakes, and tries to eat the hem.
+
+That gap produces a specific and predictable set of failures:
+
+- A cape that photographs beautifully and drags on the floor once the dog moves.
+- A hat or hood that will not stay on because the head is the one part of a dog that is always moving.
+- Sleeves that fit a standing leg and bind when the leg bends.
+- A costume that is fine for ninety seconds and becomes a chewing target in five minutes.
+
+None of these show up on a mannequin. The only way to catch them before bulk is a fitting trial on real dogs across the target range — at least one at each end of the chart — with a short walk and a sit, filmed rather than photographed. A supplier who cannot show you that has not tested the product; they have tested the sample room.
+
+## Safety is a specification item, not a disclaimer
+
+Every veterinary guide on the subject lands on the same short list, and all of it is manufacturable:
+
+- **No small detachable parts.** Buttons, bells, plastic eyes and dangling charms are choking risks. If the design needs them, they get stitched down or they get removed.
+- **No strings or drawstrings** that can be pulled, wrapped or caught.
+- **No elastic that can tighten** around the neck or chest.
+- **Breathable fabric over the body**, and nothing covering the face or eyes.
+- **Visibility** — a dark costume on a dark dog on a dark evening is its own hazard.
+
+The manufacturing translation is unglamorous: closures a paw cannot peel, seams that will not open under a shake, and a rule that anything hanging loose is either attached at two points or deleted. The same small-parts logic governs childrenswear, but the test basis and the labelling are not interchangeable — see the next section.
+
+## Fabric: the two failures are dye and drag
+
+For a one-season product the fabric decision is usually made on cost per metre, which is fine until it produces the two failures buyers actually complain about.
+
+- **Dye transfer.** A dark costume on a light-furred dog, worn for an evening, is a rub test waiting to happen. Ask for a crock test on white fleece, and treat "it has never happened" as untested rather than safe.
+- **Velcro and long fur.** Hook-and-loop is cheap and adjustable, which is why it is everywhere; it is also a comb. Put the hook side away from the coat, or use a buckle where the fur is long.
+- **Weight.** A heavy costume on a small dog is a costume the dog will not walk in. Lighter fabric with a better pattern beats a heavier fabric with a worse one.
+
+## The Halloween window is about six weeks, and that changes the economics
+
+A Halloween SKU has one selling window, one round of markdowns, and a remainder pile. That shape pushes the product toward a different brief than human apparel:
+
+- Cheap to make, flat to pack, and cheap to ship — the unit cost matters more than the finish.
+- A small number of designs, each in a full size run, rather than many designs in one size.
+- Construction that survives one evening rather than one season, without looking like it.
+
+It also changes the order shape. Pet buyers typically want four to six designs across three to four sizes, not a deep catalogue — which lands the order in a different place on the [minimum-order mechanics](/blog/cosplay-minimum-order-quantity) than a human costume programme does, and makes [packaging](/blog/retail-ready-packaging-and-private-label) a larger share of the landed cost than usual.
+
+## A pet product is not a children's product
+
+This is the one place where a costume factory's existing paperwork is most likely to be misapplied. A children's test report, a children's label, or a children's compliance file does not transfer to a pet product: the product is regulated and classified in its own lane, and the applicable requirements differ by market.
+
+What that means practically:
+
+- Ask which standard and which test report cover **this** product, and check that the report names the finished item rather than the fabric.
+- Do not let an absolute claim onto a listing — "non-toxic" or "pet-safe" — unless there is a report behind that exact wording. Otherwise state the material and let the buyer judge.
+- If the design includes a squeaker or a play element, the classification may change again. Ask before assuming.
+
+None of this is legal advice, and requirements vary by market and change over time. The [labels and compliance note](/blog/product-safety-labels-and-compliance) covers the general shape of that conversation.
+
+## What to put in the order
+
+The specification for a pet costume is short, and almost all of it is about failure modes rather than features:
+
+- A measured chart in neck, chest and back length, with a stated tolerance and an honest breed range.
+- The closure type named, with the reason — buckle where fur is long, hook-and-loop where adjustability matters.
+- The small-parts rule written down: nothing dangling, everything else stitched at two points.
+- A crock test for dye on light fur, on the finished garment.
+- Fabric weight, because it decides whether the dog will walk.
+- Packaging format — hanger or polybag — and whether the size is printed on the bag.
+- A fitting trial on real dogs at both ends of the chart, filmed, before bulk.
+- The photograph brief: which pose, on which size of dog, and what the shot must not hide.
+
+That last item is not a marketing afterthought. For this category the photograph is the product page, and a costume that only works in a photograph is a costume that comes back.
+
+## Why the category is worth adding, and what does not transfer
+
+If you already cut capes, hoods and outerwear, the machine work transfers almost completely — same seams, same closures, same finishing. What does not transfer is the fit logic, the safety list, and the seasonality. Those are learnings, not equipment, and they are cheap to acquire on a sample round and expensive to acquire on a return rate.
+
+We make these to a buyer's chart rather than to a stock range, which is the only honest way to sell a garment the wearer cannot try on. [Send us the measurements and the design](/inquiry) and the quote comes back against a real chart, or [read how custom orders run](/custom) first.`,
+    sources: [
+      {
+        label: 'r/dogs — Halloween costumes for large breeds, with the owner quoting a 25-inch neck and 36-inch chest',
+        url: 'https://www.reddit.com/r/dogs/comments/3njpgy/help_halloween_costumes_for_large_breeds/',
+      },
+      {
+        label: 'r/TechnoBarkDogGear — Halloween safety notes: tight outfits restricting movement, small buttons and strings as choking hazards',
+        url: 'https://www.reddit.com/r/TechnoBarkDogGear/comments/1ofhj4x/best_halloween_safety_tips_for_dogs_every_pet/',
+      },
+      {
+        label: 'Trupanion — A guide to pet-safe Halloween costumes: fit, vision, and what to avoid',
+        url: 'https://www.trupanion.com/en-ca/pet-blog/article/halloween-pet-costumes',
+      },
+      {
+        label: 'PetMD — Safety considerations for Halloween pet costumes: too tight restricts breathing, too loose trips the animal',
+        url: 'https://www.petmd.com/dog/safety-considerations-halloween-pet-costumes',
+      },
+      {
+        label: 'Towne Centre Veterinary — Six pet costume safety tips, including finding the right fit',
+        url: 'https://www.townecentrevet.com/services/cats/blog/want-dress-your-pet-halloween-follow-these-6-pet-costume-safety-tips',
+      },
+      {
+        label: 'r/manufacturing — A buyer asking for apparel and pet product manufacturers, and finding the search hard',
+        url: 'https://www.reddit.com/r/manufacturing/comments/1aruxs6/apparel_and_pet_product_manufacturers/',
+      },
+      {
+        label: 'r/sewhelp — Starting a dog clothing business, on building inclusive sizing',
+        url: 'https://www.reddit.com/r/sewhelp/comments/1l82a82/dog_clothing_business/',
+      },
+    ],
+  },
+  {
     slug: 'custom-cosplay-mask-commissioning',
     title: 'Where to commission a custom cosplay mask — and what it actually costs',
     excerpt:
