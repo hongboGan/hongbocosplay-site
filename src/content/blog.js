@@ -105,34 +105,13 @@ If you already cut capes, hoods and outerwear, the machine work transfers almost
 
 We make these to a buyer's chart rather than to a stock range, which is the only honest way to sell a garment the wearer cannot try on. [Send us the measurements and the design](/inquiry) and the quote comes back against a real chart, or [read how custom orders run](/custom) first.`,
     sources: [
-      {
-        label: 'r/dogs — Halloween costumes for large breeds, with the owner quoting a 25-inch neck and 36-inch chest',
-        url: 'https://www.reddit.com/r/dogs/comments/3njpgy/help_halloween_costumes_for_large_breeds/',
-      },
-      {
-        label: 'r/TechnoBarkDogGear — Halloween safety notes: tight outfits restricting movement, small buttons and strings as choking hazards',
-        url: 'https://www.reddit.com/r/TechnoBarkDogGear/comments/1ofhj4x/best_halloween_safety_tips_for_dogs_every_pet/',
-      },
-      {
-        label: 'Trupanion — A guide to pet-safe Halloween costumes: fit, vision, and what to avoid',
-        url: 'https://www.trupanion.com/en-ca/pet-blog/article/halloween-pet-costumes',
-      },
-      {
-        label: 'PetMD — Safety considerations for Halloween pet costumes: too tight restricts breathing, too loose trips the animal',
-        url: 'https://www.petmd.com/dog/safety-considerations-halloween-pet-costumes',
-      },
-      {
-        label: 'Towne Centre Veterinary — Six pet costume safety tips, including finding the right fit',
-        url: 'https://www.townecentrevet.com/services/cats/blog/want-dress-your-pet-halloween-follow-these-6-pet-costume-safety-tips',
-      },
-      {
-        label: 'r/manufacturing — A buyer asking for apparel and pet product manufacturers, and finding the search hard',
-        url: 'https://www.reddit.com/r/manufacturing/comments/1aruxs6/apparel_and_pet_product_manufacturers/',
-      },
-      {
-        label: 'r/sewhelp — Starting a dog clothing business, on building inclusive sizing',
-        url: 'https://www.reddit.com/r/sewhelp/comments/1l82a82/dog_clothing_business/',
-      },
+      'r/dogs — Halloween costumes for large breeds, with the owner quoting a 25-inch neck and 36-inch chest',
+      'r/TechnoBarkDogGear — Halloween safety notes: tight outfits restricting movement, small buttons and strings as choking hazards',
+      'Trupanion — A guide to pet-safe Halloween costumes: fit, vision, and what to avoid',
+      'PetMD — Safety considerations for Halloween pet costumes: too tight restricts breathing, too loose trips the animal',
+      'Towne Centre Veterinary — Six pet costume safety tips, including finding the right fit',
+      'r/manufacturing — A buyer asking for apparel and pet product manufacturers, and finding the search hard',
+      'r/sewhelp — Starting a dog clothing business, on building inclusive sizing',
     ],
   },
   {
