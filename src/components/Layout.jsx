@@ -15,6 +15,7 @@ export default function Layout() {
   const [shopOpen, setShopOpen] = useState(false);
   const [drawer, setDrawer] = useState(false);
   const shopRef = useRef(null);
+  const megaRef = useRef(null);
   const waRef = useRef(null);
   const { pathname } = useLocation();
 
@@ -62,7 +63,9 @@ export default function Layout() {
 
   useEffect(() => {
     function onDown(e) {
-      if (shopRef.current && !shopRef.current.contains(e.target)) setShopOpen(false);
+      const insideShop = shopRef.current?.contains(e.target);
+      const insideMega = megaRef.current?.contains(e.target);
+      if (!insideShop && !insideMega) setShopOpen(false);
     }
     function onKey(e) {
       if (e.key === 'Escape') {
@@ -137,7 +140,7 @@ export default function Layout() {
         </div>
 
         {shopOpen && (
-          <div className="mega">
+          <div ref={megaRef} className="mega">
             <div className="shell mega__grid">
               {CATEGORIES.map((c) => (
                 <Link key={c.slug} className="mega__item" to={`/shop/${c.slug}`}>
